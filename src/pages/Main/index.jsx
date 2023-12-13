@@ -143,19 +143,7 @@ const MainPage = () => {
               >
                 Medbay
               </Text>
-              <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
-                <Img
-                  className="h-7 md:h-auto object-cover w-[27px]"
-                  src="images/img_image15.png"
-                  alt="imageFifteen_One"
-                />
-                <Text
-                  className="grid text-3xl sm:text-[26px] md:text-[28px] text-blue-A700 w-[114px]"
-                  size="txtManropeBold30"
-                >
-                  Medbay
-                </Text>
-              </div>
+
             </div>
             <List
               className="md:flex-1 sm:flex-col flex-row gap-[27px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 md:ml-[0] ml-[104px] md:mt-0 mt-[67px] w-3/5 md:w-full"
@@ -306,78 +294,65 @@ const MainPage = () => {
                 </div>
               </div>
             </List>
-            <div className="h-[212px] md:h-[217px] mb-[7px] md:ml-[0] ml-[136px] md:mt-0 mt-9 relative w-[13%] md:w-full">
-              <div className="md:h-[210px] h-[212px] m-auto w-full">
-                <div className="absolute bg-blue_gray-100 flex flex-col gap-[7px] h-full inset-[0] items-start justify-center m-auto p-[19px] rounded-[47px]">
-                  <Text
-                    className="mt-24 text-black-900 text-xl"
-                    size="txtManropeRegular20"
-                  >
-                    <>Patients -&gt;</>
-                  </Text>
-                  <Text
-                    className="mb-[13px] text-black-900 text-xl"
-                    size="txtManropeRegular20"
-                  >
-                    <>Add patient -&gt;</>
-                  </Text>
-                </div>
-                <Text
-                  className="absolute leading-[100.00%] right-[0] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[24%]"
-                  size="txtManropeBold25"
-                >
-                  <>
-                    Hi, <br />
-                    Dr. Marcus
-                  </>
-                </Text>
-              </div>
-              <div className="absolute bg-white-A700 h-[43px] left-[36%] rounded-[21px] top-[13%] w-[42px]"></div>
-            </div>
+            <div className="h-[139px] md:h-[255px] mb-20 ml-[170px] mt-9 relative w-[13%]">
+            <div className="absolute bg-blue_gray-100 h-[139px] inset-[0] justify-center m-auto rounded-[47px] w-[98%]"></div>
+            <Text
+              className="absolute inset-0 flex items-center justify-center text-center sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
+              size="txtManropeBold25"
+            >
+              <>
+                Hi, <br />
+                Dr. Marcus
+              </>
+            </Text>
+          </div>
+
           </div>
         </div>
         <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
-            <Input
-              name="groupFortyOne"
-              placeholder="David Ride"
-              className="font-semibold p-0 placeholder:text-white-A700 text-left text-xl w-full"
-              wrapClassName="mt-[25px] w-full"
-              shape="round"
-              color="indigo_A700"
-            ></Input>
+            <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-white-A700 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Rider
+                </Text>
+              </div>
+            </div>
             <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
               <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
                 >
-                  Marcus Ride
-                </Text>
-                <Text
-                  className="absolute h-full inset-[0] justify-center m-auto text-black-900 text-xl w-max"
-                  size="txtManropeSemiBold20"
-                >
-                  Marcus Ride
+                  Dr.Master
                 </Text>
               </div>
             </div>
-            <Input
-              name="groupThirtyNine"
-              placeholder="Marcus Ride"
-              className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-              wrapClassName="mt-[13px] w-full"
-              shape="round"
-            ></Input>
-            <Input
-              name="groupThirtyEight"
-              placeholder="Marcus Ride"
-              className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-              wrapClassName="mt-[13px] w-full"
-              shape="round"
-            ></Input>
+            <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-black-900 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Master
+                </Text>
+              </div>
+            </div>
+            <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-black-900 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Master
+                </Text>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">

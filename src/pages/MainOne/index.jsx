@@ -133,12 +133,7 @@ const MainOnePage = () => {
                 src="images/img_image15.png"
                 alt="imageFifteen"
               />
-              <Text
-                className="ml-auto mt-auto text-3xl sm:text-[26px] md:text-[28px] text-blue-A700 w-[114px]"
-                size="txtManropeBold30"
-              >
-                Medbay
-              </Text>
+
               <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
                 <Img
                   className="h-7 md:h-auto object-cover w-[27px]"
@@ -156,7 +151,7 @@ const MainOnePage = () => {
             <div className="h-[139px] md:h-[255px] mb-20 mr-[3px] mt-9 relative w-[13%]">
               <div className="absolute bg-blue_gray-100 h-[139px] inset-[0] justify-center m-auto rounded-[47px] w-[98%]"></div>
               <Text
-                className="absolute bottom-[28%] leading-[100.00%] right-[0] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
+                className="absolute inset-0 flex items-center justify-center text-center sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
                 size="txtManropeBold25"
               >
                 <>
@@ -171,28 +166,37 @@ const MainOnePage = () => {
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
-            <Input
-              name="groupEightyThree"
-              placeholder="Dr Marcus"
-              className="font-semibold p-0 placeholder:text-white-A700 text-left text-xl w-full"
-              wrapClassName="mt-[25px] w-full"
-              shape="round"
-              color="indigo_A700"
-            ></Input>
-            <Input
-              name="groupEightyTwo"
-              placeholder="Dr. Rider"
-              className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-              wrapClassName="mt-[13px] w-full"
-              shape="round"
-            ></Input>
-            <Input
-              name="groupEightyOne"
-              placeholder="Dr. Master"
-              className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-              wrapClassName="mt-[13px] w-full"
-              shape="round"
-            ></Input>
+            <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-white-A700 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Marcus
+                </Text>
+              </div>
+            </div>
+            <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-black-900 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Rider
+                </Text>
+              </div>
+            </div>
+            <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <Text
+                  className="m-auto text-black-900 text-xl"
+                  size="txtManropeSemiBold20"
+                >
+                  Dr.Master
+                </Text>
+              </div>
+            </div>
+
           </div>
         </div>
         <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">

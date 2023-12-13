@@ -17,12 +17,6 @@ const CreatePrescriptionPage = () => {
               src="images/img_image15.png"
               alt="imageFifteen"
             />
-            <Text
-              className="ml-auto mt-auto text-3xl sm:text-[26px] md:text-[28px] text-blue-A700 w-[114px]"
-              size="txtManropeBold30"
-            >
-              Medbay
-            </Text>
             <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
               <Img
                 className="h-7 md:h-auto object-cover w-[27px]"
