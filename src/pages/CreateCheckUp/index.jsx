@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +7,12 @@ import Header from "components/Header";
 
 const CreateCheckUpPage = () => {
   const navigate = useNavigate();
+  const [selectedFile, setSelectedFile] = useState(null);
 
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+  };
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[25px] w-full">
@@ -85,18 +90,21 @@ const CreateCheckUpPage = () => {
                       days
                     </Text>
                   </div>
-                  <div className="border border-black-900_4c border-solid flex sm:flex-col flex-row gap-[18px] items-center justify-center md:ml-[0] ml-[23px] mt-16 p-1.5 w-[88%] md:w-full">
-                    <Img
-                      className="h-[26px] sm:ml-[0] ml-[95px]"
+                  <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-200 md:w-full">
+                    <img
+                      className="h-8 ml-[86px] w-[31px]"
                       src="images/img_vector.svg"
                       alt="vector"
                     />
-                    <Text
-                      className="mr-[59px] sm:mt-0 mt-[7px] text-black-900 text-xl"
-                      size="txtManropeMedium20"
-                    >
-                      drop signature here
-                    </Text>
+                    <label className="text-black-900 text-xl" htmlFor="fileInput">
+                      {selectedFile ? selectedFile.name : 'Drop signature here'}
+                    </label>
+                    <input
+                      type="file"
+                      id="fileInput"
+                      style={{ display: 'none' }}
+                      onChange={handleFileChange}
+                    />
                   </div>
                   <Text
                     className="common-pointer bg-blue-A700 h-[54px] justify-center flex items-center md:ml-[0] ml-[3px] mt-8 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"

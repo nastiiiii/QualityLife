@@ -294,18 +294,22 @@ const MainPage = () => {
                 </div>
               </div>
             </List>
-            <div className="h-[139px] md:h-[255px] mb-20 ml-[170px] mt-9 relative w-[13%]">
-            <div className="absolute bg-blue_gray-100 h-[139px] inset-[0] justify-center m-auto rounded-[47px] w-[98%]"></div>
-            <Text
-              className="absolute inset-0 flex items-center justify-center text-center sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
-              size="txtManropeBold25"
-            >
-              <>
-                Hi, <br />
-                Dr. Marcus
-              </>
-            </Text>
-          </div>
+            <div className="h-[164px] md:h-[178px] mb-[15px] md:ml-[0] ml-[136px] mr-[18px] md:mt-0 mt-[51px] relative w-[13%] md:w-full">
+              <div className="md:h-[163px] h-[164px] m-auto w-full">
+                <div className="absolute bg-blue_gray-100 flex flex-col h-15 inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
+                </div>
+                <Text
+                  className="absolute leading-[100.00%] right-[20px] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
+                  size="txtManropeBold25"
+                >
+                  <>
+                    Hi, <br />
+                    Dr. Marcus
+                  </>
+                </Text>
+              </div>
+              <div className="absolute bg-white-A700 h-[43px] left-[36%] rounded-[21px] top-[17%] w-[42px]"></div>
+            </div>
 
           </div>
         </div>

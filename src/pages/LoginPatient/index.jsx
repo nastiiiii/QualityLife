@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -6,6 +6,12 @@ import { Button, Img, Input, Text } from "components";
 
 const LoginPatientPage = () => {
   const navigate = useNavigate();
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+  };
 
   return (
     <>
@@ -91,17 +97,20 @@ const LoginPatientPage = () => {
                 I’m a doctor
               </Text>
               <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-3/4 md:w-full">
-                <Img
+                <img
                   className="h-8 ml-[86px] w-[31px]"
                   src="images/img_vector.svg"
                   alt="vector"
                 />
-                <Text
-                  className="text-black-900 text-xl"
-                  size="txtManropeMedium20"
-                >
-                  drop signature here
-                </Text>
+                <label className="text-black-900 text-xl" htmlFor="fileInput">
+                  {selectedFile ? selectedFile.name : 'Drop signature here'}
+                </label>
+                <input
+                  type="file"
+                  id="fileInput"
+                  style={{ display: 'none' }}
+                  onChange={handleFileChange}
+                />
               </div>
               <Button
                 className="common-pointer cursor-pointer font-bold min-w-[448px] sm:min-w-full mt-[49px] text-2xl md:text-[22px] text-center sm:text-xl"

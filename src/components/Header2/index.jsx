@@ -43,7 +43,7 @@ const Header2 = (props) => {
               </Text>
             </div>
             <Text
-              className="absolute leading-[100.00%] right-[20px] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
+              className="absolute inset-0 flex items-center justify-center text-center sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
               size="txtManropeBold25"
             >
               <>
@@ -52,7 +52,6 @@ const Header2 = (props) => {
               </>
             </Text>
           </div>
-          <div className="absolute bg-white-A700 h-[43px] left-[36%] rounded-[21px] top-[17%] w-[42px]"></div>
         </div>
       </header>
     </>

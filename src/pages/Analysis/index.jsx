@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,7 +7,6 @@ import Header from "components/Header";
 
 const AnalysisPage = () => {
   const navigate = useNavigate();
-
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[22px] w-full">

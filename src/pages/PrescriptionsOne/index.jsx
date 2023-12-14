@@ -15,12 +15,6 @@ const PrescriptionsOnePage = () => {
               src="images/img_image15.png"
               alt="imageFifteen"
             />
-            <Text
-              className="ml-auto mt-auto text-3xl sm:text-[26px] md:text-[28px] text-blue-A700 w-[114px]"
-              size="txtManropeBold30"
-            >
-              Medbay
-            </Text>
             <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
               <Img
                 className="h-7 md:h-auto object-cover w-[27px]"
@@ -46,16 +40,14 @@ const PrescriptionsOnePage = () => {
                 </Text>
               </div>
               <Text
-                className="absolute leading-[100.00%] right-[0] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
-                size="txtManropeBold25"
-              >
+                className="absolute inset-0 flex items-center justify-center text-center sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700"
+                size="txtManropeBold25">
                 <>
                   Hi, <br />
                   Dr. Marcus
                 </>
               </Text>
             </div>
-            <div className="absolute bg-white-A700 h-[43px] left-[36%] rounded-[21px] top-[17%] w-[42px]"></div>
           </div>
         </div>
         <div className="absolute bottom-[0] flex flex-col items-end justify-start md:px-5 right-[2%] w-[19%]">
