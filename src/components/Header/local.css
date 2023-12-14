@@ -1,0 +1,4 @@
+.percent-offset::before {
+    content: " ";
+    white-space: pre;
+}
