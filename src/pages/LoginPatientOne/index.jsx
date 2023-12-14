@@ -19,6 +19,12 @@ const LoginPatientOnePage = () => {
                   src="images/img_image15.png"
                   alt="imageFifteen"
                 />
+                <Text
+                  className="md:text-5xl text-[70px] text-blue-A700 w-auto"
+                  size="txtManropeBold70"
+                >
+                  Medbay
+                </Text>
               </div>
             </div>
             <div className="flex flex-col gap-[27px] items-start justify-start md:ml-[0] ml-[18px] mt-[63px]">
