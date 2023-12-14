@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
 
+import "./local.css"
+
 const Header = (props) => {
   const navigate = useNavigate();
 
@@ -64,7 +66,7 @@ const Header = (props) => {
                   className="text-green-A700 text-sm w-auto"
                   size="txtManropeMedium14"
                 >
-                  4.8%
+                  <span className="percent-offset">4.8%</span>
                 </Text>
               </div>
               <Text
@@ -116,7 +118,7 @@ const Header = (props) => {
                   className="text-green-A700 text-sm w-auto"
                   size="txtManropeMedium14"
                 >
-                  40%
+                  <span className="percent-offset">40%</span>
                 </Text>
               </div>
               <Text
@@ -162,7 +164,7 @@ const Header = (props) => {
                   className="text-red-600 text-sm w-auto"
                   size="txtManropeMedium14Red600"
                 >
-                  25%
+                  <span className="percent-offset">25%</span>
                 </Text>
               </div>
               <Text
