@@ -29,7 +29,7 @@ const CreateCheckUpPage = () => {
                   >
                     David Ride
                   </Text>
-                  <div className="flex flex-row gap-[18px] items-center justify-start mt-[30px] w-[77%] md:w-full">
+                  <div className="flex flex-row gap-[18px] items-center justify-start mt-[30px] w-[99%] md:w-full">
                     <Text
                       className="sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
                       size="txtManropeSemiBold25Black900"
@@ -49,24 +49,23 @@ const CreateCheckUpPage = () => {
                   >
                     in dates{" "}
                   </Text>
-                  <Text
-                    className="bg-white-A700 border-2 border-blue-A700 border-solid h-[50px] justify-center md:ml-[0] ml-[3px] mt-2 pl-5 sm:pr-5 pr-[35px] py-2 rounded-[21px] text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[450px]"
-                    size="txtManropeSemiBold24Black90087"
-                  >
-                    dd/mm/yyyy
-                  </Text>
+                  <input
+                    className="bg-white-A700 border-2 border-blue-A700 border-solid h-[50px] justify-center md:ml-[0] ml-[3px] mt-2 pl-5 sm:pr-5 pr-[35px] py-2 rounded-[21px] text-2xl md:text-[22px] text-black-900 sm:text-xl w-[450px]"
+                    type="text"
+                    placeholder="dd/mm/yyyy"
+                  />
+
                   <Text
                     className="md:ml-[0] ml-[7px] mt-[11px] sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
                     size="txtManropeSemiBold25Black900"
                   >
                     at
                   </Text>
-                  <Text
-                    className="bg-white-A700 border-2 border-blue-A700 border-solid h-[50px] justify-center md:ml-[0] ml-[3px] mt-[11px] pb-2.5 pl-5 sm:pr-5 pr-[35px] pt-1.5 rounded-[21px] text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[450px]"
-                    size="txtManropeSemiBold24Black90087"
-                  >
-                    hh/mm
-                  </Text>
+                  <input
+                    className="bg-white-A700 border-2 border-blue-A700 border-solid h-[50px] justify-center md:ml-[0] ml-[3px] mt-2 pl-5 sm:pr-5 pr-[35px] py-2 rounded-[21px] text-2xl md:text-[22px] text-black-900 sm:text-xl w-[450px]"
+                    type="text"
+                    placeholder="hh/mm"
+                  />
                   <Text
                     className="md:ml-[0] ml-[3px] mt-[11px] sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
                     size="txtManropeSemiBold25Black900"
@@ -74,10 +73,10 @@ const CreateCheckUpPage = () => {
                     Remind him in
                   </Text>
                   <div className="flex flex-row gap-[15px] items-end justify-start md:ml-[0] ml-[7px] mt-2 w-[65%] md:w-full">
-                    <Img
-                      className="h-[50px] rounded-[21px]"
-                      src="images/img_group31.svg"
-                      alt="group427318878"
+                    <input
+                      className="bg-white-A700 border-2 border-blue-A700 border-solid h-[50px] justify-center md:ml-[0] ml-[3px] mt-2 pl-5 sm:pr-5 pr-[35px] py-2 rounded-[21px] text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[450px]"
+                      type="text"
+                      placeholder=""
                     />
                     <Text
                       className="mb-[3px] mt-[11px] sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
@@ -100,7 +99,7 @@ const CreateCheckUpPage = () => {
                     </Text>
                   </div>
                   <Text
-                    className="common-pointer bg-blue-A700 h-[54px] justify-center md:ml-[0] ml-[3px] mt-8 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"
+                    className="common-pointer bg-blue-A700 h-[54px] justify-center flex items-center md:ml-[0] ml-[3px] mt-8 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"
                     size="txtManropeMedium30"
                     onClick={() => navigate(-1)}
                   >
@@ -150,49 +149,48 @@ const CreateCheckUpPage = () => {
               <div className="md:h-[646px] h-[660px] pt-3.5 px-3.5 relative w-full">
                 <div className="bg-gray-200 h-[646px] m-auto rounded-[32px] w-[89%]"></div>
                 <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
-                  <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full">
-                    <Img
-                      className="h-5 mt-1 w-5"
-                      src="images/img_rewind.svg"
-                      alt="rewind"
-                    />
+
+                  <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
+                  <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                      <Text
+                        className="m-auto text-white-A700 text-xl"
+                        size="txtManropeSemiBold20"
+                      >
+                        Dr.Rider
+                      </Text>
+                    </div>
                   </div>
-                  <Input
-                    name="groupSixtyTwo"
-                    placeholder="David Ride"
-                    className="font-semibold p-0 placeholder:text-white-A700 text-left text-xl w-full"
-                    wrapClassName="mt-[25px] w-full"
-                    shape="round"
-                    color="indigo_A700"
-                  ></Input>
                   <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
                     <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
                       <Text
                         className="m-auto text-black-900 text-xl"
                         size="txtManropeSemiBold20"
                       >
-                        Marcus Ride
-                      </Text>
-                      <Text
-                        className="absolute h-full inset-[0] justify-center m-auto text-black-900 text-xl w-max"
-                        size="txtManropeSemiBold20"
-                      >
-                        Marcus Ride
+                        Dr.Master
                       </Text>
                     </div>
                   </div>
-                  <Text
-                    className="bg-gray-400 h-[50px] justify-center mt-[13px] pb-[9px] pl-[9px] sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[219px]"
-                    size="txtManropeSemiBold20"
-                  >
-                    Marcus Ride
-                  </Text>
-                  <Text
-                    className="bg-gray-400 h-[50px] justify-center mt-[13px] pb-[9px] pl-[9px] sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[219px]"
-                    size="txtManropeSemiBold20"
-                  >
-                    Marcus Ride
-                  </Text>
+                  <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                      <Text
+                        className="m-auto text-black-900 text-xl"
+                        size="txtManropeSemiBold20"
+                      >
+                        Dr.Master
+                      </Text>
+                    </div>
+                  </div>
+                  <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                      <Text
+                        className="m-auto text-black-900 text-xl"
+                        size="txtManropeSemiBold20"
+                      >
+                        Dr.Master
+                      </Text>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">

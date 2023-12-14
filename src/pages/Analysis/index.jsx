@@ -16,51 +16,47 @@ const AnalysisPage = () => {
           <div className="absolute md:h-[672px] h-[705px] p-3.5 right-[0] top-[0] w-1/5">
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
-              <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-start pt-[7px] px-[7px] w-[98%] md:w-full">
-                <Img
-                  className="h-[22px] mt-[5px]"
-                  src="images/img_rewind.svg"
-                  alt="rewind"
-                />
+              <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
+              <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-white-A700 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Rider
+                  </Text>
+                </div>
               </div>
-              <Input
-                name="groupFortySeven"
-                placeholder="David Ride"
-                className="font-semibold p-0 placeholder:text-white-A700 text-left text-xl w-full"
-                wrapClassName="mt-[25px] w-full"
-                shape="round"
-                color="indigo_A700"
-              ></Input>
               <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
                 <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
                   >
-                    Marcus Ride
-                  </Text>
-                  <Text
-                    className="absolute h-full inset-[0] justify-center m-auto text-black-900 text-xl w-max"
-                    size="txtManropeSemiBold20"
-                  >
-                    Marcus Ride
+                    Dr.Master
                   </Text>
                 </div>
               </div>
-              <Input
-                name="groupFortyFive"
-                placeholder="Marcus Ride"
-                className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                wrapClassName="mt-[13px] w-full"
-                shape="round"
-              ></Input>
-              <Input
-                name="groupFortyFour"
-                placeholder="Marcus Ride"
-                className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                wrapClassName="mt-[13px] w-full"
-                shape="round"
-              ></Input>
+              <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-black-900 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Master
+                  </Text>
+                </div>
+              </div>
+              <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-black-900 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Master
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
           <div className="absolute bottom-[0] flex flex-row items-center justify-start p-1.5 right-[0] w-[19%]">
@@ -106,12 +102,12 @@ const AnalysisPage = () => {
                       David Ride
                     </Text>
                     <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between mt-8 w-full">
-                      <div className="bg-gray-400 h-[50px] rounded-md w-[14%]"></div>
-                      <div className="bg-gray-400 h-[50px] rounded-md w-[19%]"></div>
-                      <div className="bg-gray-400 h-[50px] rounded-md w-[32%]"></div>
-                      <div className="bg-gray-400 h-[50px] rounded-md w-[28%]"></div>
+                      <div className="bg-gray-400 h-[50px] rounded-md w-[14%] mt-3"></div>
+                      <div className="bg-gray-400 h-[50px] rounded-md w-[19%] mt-3"></div>
+                      <div className="bg-gray-400 h-[50px] rounded-md w-[32%] mt-3"></div>
+                      <div className="bg-gray-400 h-[50px] rounded-md w-[28%] mt-3"></div>
                     </div>
-                    <div className="bg-gray-400 h-[50px] ml-0.5 md:ml-[0] mt-[43px] rounded-md w-[34%]"></div>
+                    <div className="bg-gray-400 h-[50px] ml-0.5 md:ml-[0] mt-[55px] rounded-md w-[34%]"></div>
                   </div>
                   <div className="flex flex-col gap-[53px] items-end justify-start md:mt-0 mt-1.5 w-[48%] md:w-full">
                     <Text
@@ -154,18 +150,18 @@ const AnalysisPage = () => {
                         </div>
                       </div>
                       <Text
-                        className="common-pointer bg-blue-A700 h-[54px] justify-center pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[512px]"
+                        className="common-pointer bg-blue-A700 h-[54px] flex justify-center items-center pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[512px]"
                         size="txtManropeMedium30"
                         onClick={() => navigate("/createanalysis")}
                       >
                         Create Analysis
                       </Text>
+
                     </div>
                   </div>
                 </div>
               </div>
               <div className="absolute bottom-[6%] flex flex-col gap-6 items-center justify-start left-[4%] w-[45%]">
-                <div className="bg-gray-400 h-[50px] rounded-md w-[32%]"></div>
                 <div className="bg-white-A700 flex flex-col items-center justify-start p-40 md:px-10 sm:px-5 rounded-md w-full">
                   <Text
                     className="mb-[9px] text-black-900 text-xl"
@@ -177,27 +173,27 @@ const AnalysisPage = () => {
               </div>
             </div>
             <div className="absolute bottom-[13%] flex flex-col inset-x-[0] justify-start mx-auto w-[91%]">
-              <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-start w-[41%] md:w-full">
+              <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-start w-[50%] md:w-full mt-40">
                 <Text
-                  className="sm:mt-0 mt-0.5 text-black-900 text-xl"
+                  className="sm:mt-0 mt-0.5 text-black-900 text-l"
                   size="txtManropeSemiBold20"
                 >
                   r g b
                 </Text>
                 <Text
-                  className="mb-0.5 sm:ml-[0] ml-[39px] text-black-900 text-xl"
+                  className="mb-0.5 sm:ml-[0] ml-[39px] text-black-900 text-l"
                   size="txtManropeSemiBold20"
                 >
                   Duration
                 </Text>
                 <Text
-                  className="mb-0.5 ml-2.5 sm:ml-[0] text-black-900 text-xl"
+                  className="mb-0.5 ml-10 sm:ml-[10] text-black-900 text-l"
                   size="txtManropeSemiBold20"
                 >
                   Blood Pressure
                 </Text>
                 <Text
-                  className="ml-11 sm:ml-[0] sm:mt-0 mt-0.5 text-black-900 text-xl"
+                  className="ml-11 sm:ml-[0] sm:mt-0 mt-0.5 text-black-900 text-l"
                   size="txtManropeSemiBold20"
                 >
                   Oxygen
@@ -205,27 +201,28 @@ const AnalysisPage = () => {
               </div>
               <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start md:ml-[0] ml-[23px] w-[98%] md:w-full">
                 <Text
-                  className="md:mt-0 mt-[62px] text-black-900 text-xl"
+                  className="md:mt-0 mt-[80px] text-black-900 text-l"
                   size="txtManropeSemiBold20"
                 >
                   Leukocytes
                 </Text>
                 <Text
-                  className="ml-11 md:ml-[0] md:mt-0 mt-[62px] text-black-900 text-xl"
+                  className="ml-11 md:ml-[0] md:mt-0 mt-[62px] text-black-900 text-l "
                   size="txtManropeSemiBold20"
                 >
                   Sugar in Blood
+                  <div className="bg-gray-400 h-[50px] rounded-md w-[150%]"></div>
                 </Text>
-                <div className="flex flex-col items-center justify-start md:ml-[0] ml-[26px] md:mt-0 mt-[59px] w-[12%] md:w-full">
+                <div className="flex flex-col items-center justify-start md:ml-[0] ml-[26px] md:mt-0 mt-[84px] w-[12%] md:w-full">
                   <Text
-                    className="text-black-900 text-xl"
+                    className="text-black-900 text-l"
                     size="txtManropeSemiBold20"
                   >
                     Pulse
                   </Text>
-                  <div className="bg-gray-400 h-[50px] rounded-md w-full"></div>
+                  <div className="bg-gray-400 h-[50px] rounded-md w-full ml-20"></div>
                 </div>
-                <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col justify-center md:ml-[0] ml-[360px] p-2.5 rounded-[21px] w-[24%] md:w-full">
+                <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col justify-center md:ml-[0] ml-[390px] p-2.5 rounded-[21px] w-[24%] md:w-full">
                   <Text
                     className="leading-[100.00%] mr-32 text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[45%] sm:w-full"
                     size="txtManropeSemiBold24Black90087"

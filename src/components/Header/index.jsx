@@ -30,7 +30,7 @@ const Header = (props) => {
             </Text>
           </div>
         </div>
-        <div className="bg-gray-200 flex flex-col gap-3 h-[133px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[104px] md:mt-0 mt-[82px] px-4 py-3 rounded-[24px] shadow-bs w-[265px]">
+        <div className="bg-gray-200 flex flex-col gap-3 h-[150px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[104px] md:mt-0 mt-[82px] px-4 py-3 rounded-[24px] shadow-bs w-[265px]">
           <div className="flex flex-row gap-3 items-center justify-start w-auto">
             <div className="bg-indigo-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
               <Img
@@ -76,7 +76,7 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 flex flex-col gap-3 h-[133px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[27px] md:mt-0 mt-[82px] p-3 rounded-[24px] shadow-bs w-[264px]">
+        <div className="bg-gray-200 flex flex-col gap-3 h-[150px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[27px] md:mt-0 mt-[82px] p-3 rounded-[24px] shadow-bs w-[264px]">
           <div className="flex flex-row gap-3 items-center justify-start w-auto">
             <Button
               className="flex h-16 items-center justify-center w-16"
@@ -128,7 +128,7 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-200 flex flex-col gap-3 h-[133px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[27px] md:mt-0 mt-[82px] p-3 rounded-[24px] shadow-bs w-[265px]">
+        <div className="bg-gray-200 flex flex-col gap-3 h-[150px] md:h-auto items-start justify-start mb-[15px] md:ml-[0] ml-[27px] md:mt-0 mt-[82px] p-3 rounded-[24px] shadow-bs w-[265px]">
           <div className="flex flex-row gap-3 items-center justify-start w-auto">
             <div className="bg-green-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
               <Img
@@ -186,7 +186,7 @@ const Header = (props) => {
               </Text>
             </div>
             <Text
-              className="absolute leading-[100.00%] right-[0] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
+              className="absolute leading-[100.00%] right-[20px] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
               size="txtManropeBold25"
             >
               <>

@@ -181,7 +181,7 @@ const PrescriptionsPage = () => {
               </div>
             </div>
           </List>
-          <div className="md:h-[163px] h-[164px] md:ml-[0] ml-[136px] md:mt-0 mt-9 relative w-[13%] md:w-full">
+          <div className="h-[164px] md:h-[178px] mb-[15px] md:ml-[0] ml-[136px] mr-[18px] md:mt-0 mt-[51px] relative w-[13%] md:w-full">
             <div className="md:h-[163px] h-[164px] m-auto w-full">
               <div className="absolute bg-blue_gray-100 flex flex-col h-full inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
                 <Text
@@ -193,7 +193,7 @@ const PrescriptionsPage = () => {
                 </Text>
               </div>
               <Text
-                className="absolute leading-[100.00%] right-[0] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
+                className="absolute leading-[100.00%] right-[20px] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
                 size="txtManropeBold25"
               >
                 <>
@@ -209,50 +209,47 @@ const PrescriptionsPage = () => {
           <div className="md:h-[674px] h-[705px] p-3.5 relative w-full">
             <div className="bg-gray-200 h-[674px] m-auto rounded-[32px] w-[89%]"></div>
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
-              <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-start pt-2 px-2 w-[98%] md:w-full">
-                <Img
-                  className="h-[22px] mt-1"
-                  src="images/img_rewind.svg"
-                  alt="rewind"
-                />
+              <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
+              <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-white-A700 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Rider
+                  </Text>
+                </div>
               </div>
-              <Input
-                name="groupSixtyNine"
-                placeholder="David Ride"
-                className="font-semibold p-0 placeholder:text-white-A700 text-left text-xl w-full"
-                wrapClassName="mt-[25px] w-full"
-                shape="round"
-                color="indigo_A700"
-              ></Input>
               <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
                 <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
                   >
-                    Marcus Ride
-                  </Text>
-                  <Text
-                    className="absolute h-full inset-[0] justify-center m-auto text-black-900 text-xl w-max"
-                    size="txtManropeSemiBold20"
-                  >
-                    Marcus Ride
+                    Dr.Master
                   </Text>
                 </div>
               </div>
-              <Text
-                className="bg-gray-400 h-[50px] justify-center mt-[13px] pb-[9px] pl-[9px] sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[219px]"
-                size="txtManropeSemiBold20"
-              >
-                Marcus Ride
-              </Text>
-              <Input
-                name="groupSixtySix"
-                placeholder="Marcus Ride"
-                className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                wrapClassName="mt-[13px] w-full"
-                shape="round"
-              ></Input>
+              <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-black-900 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Master
+                  </Text>
+                </div>
+              </div>
+              <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                  <Text
+                    className="m-auto text-black-900 text-xl"
+                    size="txtManropeSemiBold20"
+                  >
+                    Dr.Master
+                  </Text>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
