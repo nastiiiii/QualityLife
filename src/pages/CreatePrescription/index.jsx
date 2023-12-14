@@ -279,7 +279,6 @@ const CreatePrescriptionPage = () => {
               size="txtManropeSemiBold20Red600b2"
               onClick={() => navigate("/")}
             >
-              <></>
               exit
             </Button>
           </div>
