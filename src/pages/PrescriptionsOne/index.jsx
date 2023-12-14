@@ -1,8 +1,10 @@
 import React from "react";
 
-import { Img, Input, Text } from "components";
+import { Button, Img, Input, Text } from "components";
+import { useNavigate } from "react-router-dom";
 
 const PrescriptionsOnePage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto px-[18px] relative w-full">
@@ -99,12 +101,13 @@ const PrescriptionsOnePage = () => {
               src="images/img_location.svg"
               alt="location"
             />
-            <Text
+            <Button
               className="ml-4 mr-[9px] my-0.5 text-red-600_b2 text-xl"
               size="txtManropeSemiBold20Red600b2"
+              onClick={() => navigate("/")}
             >
               exit
-            </Text>
+            </Button>
           </div>
         </div>
         <div className="absolute bottom-[2%] md:h-[1239px] sm:h-[820px] h-[840px] left-[2%] pt-[13px] md:px-5 px-[13px] w-[79%] md:w-full">

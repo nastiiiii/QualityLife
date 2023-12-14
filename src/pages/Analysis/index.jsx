@@ -76,12 +76,13 @@ const AnalysisPage = () => {
               src="images/img_location.svg"
               alt="location"
             />
-            <Text
+            <Button
               className="ml-4 my-0.5 text-red-600_b2 text-xl"
               size="txtManropeSemiBold20Red600b2"
+              onClick={() => navigate("/")}
             >
               exit
-            </Text>
+            </Button>
           </div>
           <div className="absolute sm:h-[712px] h-[738px] md:h-[945px] inset-y-[0] left-[0] my-auto p-1.5 w-[81%] md:w-full">
             <div className="h-[712px] md:h-[945px] m-auto w-[97%] md:w-full">

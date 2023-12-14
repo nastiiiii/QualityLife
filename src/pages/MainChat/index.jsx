@@ -136,12 +136,13 @@ const MainChatPage = () => {
               src="images/img_location.svg"
               alt="location"
             />
-            <Text
+            <Button
               className="mb-0.5 ml-4 text-red-600_b2 text-xl"
               size="txtManropeSemiBold20Red600b2"
+              onClick={() => navigate("/")}
             >
               exit
-            </Text>
+            </Button>
           </div>
           <div className="absolute flex md:flex-col flex-row md:gap-5 inset-x-[0] items-start justify-start mx-auto p-[15px] top-[0] w-full">
             <div className="flex h-12 justify-end md:mt-0 mt-[19px] relative w-[155px]">

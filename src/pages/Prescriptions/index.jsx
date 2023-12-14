@@ -269,12 +269,13 @@ const PrescriptionsPage = () => {
               src="images/img_location.svg"
               alt="location"
             />
-            <Text
+            <Button
               className="ml-4 mr-[9px] my-0.5 text-red-600_b2 text-xl"
               size="txtManropeSemiBold20Red600b2"
+              onClick={() => navigate("/")}
             >
               exit
-            </Text>
+            </Button>
           </div>
         </div>
         <div className="absolute bottom-[2%] md:h-[1280px] sm:h-[712px] h-[738px] left-[2%] p-1.5 md:px-5 w-[79%] md:w-full">
