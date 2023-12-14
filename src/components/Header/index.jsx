@@ -188,7 +188,7 @@ const Header = (props) => {
               </Text>
             </div>
             <Text
-              className="absolute leading-[100.00%] right-[20px] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%]"
+              className="relative leading-[100.00%] sm:text-[21px] md:text-[23px] text-[25px] text-indigo-A700 top-[30%] left-[10%]"
               size="txtManropeBold25"
             >
               <>
