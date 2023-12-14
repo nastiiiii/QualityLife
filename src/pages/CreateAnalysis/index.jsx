@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -7,6 +7,12 @@ import Header from "components/Header";
 
 const CreateAnalysisPage = () => {
   const navigate = useNavigate();
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+  };
 
   return (
     <>
@@ -152,18 +158,21 @@ const CreateAnalysisPage = () => {
                         days
                       </Text>
                     </div>
-                    <div className="border border-black-900_4c border-solid flex sm:flex-col flex-row gap-[18px] items-center justify-center md:ml-[0] ml-[53px] mt-[15px] p-1.5 w-[76%] md:w-full">
-                      <Img
-                        className="h-[26px] sm:ml-[0] ml-[95px]"
+                    <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-3/4 md:w-full">
+                      <img
+                        className="h-8 ml-[86px] w-[31px]"
                         src="images/img_vector.svg"
                         alt="vector"
                       />
-                      <Text
-                        className="mr-[59px] sm:mt-0 mt-[7px] text-black-900 text-xl"
-                        size="txtManropeMedium20"
-                      >
-                        drop signature here
-                      </Text>
+                      <label className="text-black-900 text-xl" htmlFor="fileInput">
+                        {selectedFile ? selectedFile.name : 'Drop signature here'}
+                      </label>
+                      <input
+                        type="file"
+                        id="fileInput"
+                        style={{ display: 'none' }}
+                        onChange={handleFileChange}
+                      />
                     </div>
                     <Text
                       className="common-pointer bg-blue-A700 h-[54px] flex justify-center items-center mt-5 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"

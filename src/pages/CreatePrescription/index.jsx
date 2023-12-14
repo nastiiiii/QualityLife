@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Input, List, Text } from "components";
+import { Button, Img, List, Text } from "components";
 
 const CreatePrescriptionPage = () => {
   const navigate = useNavigate();
+
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+  };
 
   return (
     <>
@@ -268,7 +275,7 @@ const CreatePrescriptionPage = () => {
               alt="location"
             />
             <Button
-ß              className="ml-4 mr-[9px] my-0.5 text-red-600_b2 text-xl"
+              className="ml-4 mr-[9px] my-0.5 text-red-600_b2 text-xl"
               size="txtManropeSemiBold20Red600b2"
               onClick={() => navigate("/")}
             >
@@ -294,23 +301,21 @@ const CreatePrescriptionPage = () => {
                   David Ride
                 </Text>
               </div>
-              <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col md:gap-10 gap-[447px] justify-start p-3 rounded-[21px] w-full">
-                <Text
-                  className="ml-2 md:ml-[0] text-2xl md:text-[22px] text-black-900_87 sm:text-xl"
-                  size="txtManropeSemiBold24Black90087"
-                >
-                  Prescription
-                </Text>
-                <Button
-                  className="cursor-pointer font-medium mb-[3px] min-w-[157px] md:ml-[0] ml-[319px] mr-[17px] rounded-[23px] text-center text-xl"
-                  shape="round"
-                  color="indigo_A700"
+
+
+                <textarea
+                  name="group427318876"
+                  placeholder="Prescription"
+                  type={"text"}
+                  cols="500" rows="16"
+                  className="
+                  font-semibold md:text-[22px] p-3 text-black-900 placeholder:text-black-900_87 sm:text-xl text-2xl
+                  text-left w-full bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col md:gap-10 gap-[447px]
+                  justify-start rounded-[21px] h-100"
+                  color="white_A700"
                   size="xs"
-                  variant="fill"
-                >
-                  Publish
-                </Button>
-              </div>
+                />
+
             </div>
             <div className="flex flex-col justify-start md:mt-0 mt-1.5 w-[47%] md:w-full">
               <Text
@@ -340,19 +345,23 @@ const CreatePrescriptionPage = () => {
                     18/12/2023
                   </span>
                 </Text>
-                <div className="border border-black-900_4c border-solid flex flex-row gap-[18px] items-center justify-start p-1.5 w-[87%] md:w-full">
-                  <Img
-                    className="h-[26px] ml-[95px]"
+                <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-200 md:w-full">
+                  <img
+                    className="h-8 ml-[86px] w-[31px]"
                     src="images/img_vector.svg"
                     alt="vector"
                   />
-                  <Text
-                    className="mt-[7px] text-black-900 text-xl"
-                    size="txtManropeMedium20"
-                  >
-                    drop signature here
-                  </Text>
+                  <label className="text-black-900 text-xl" htmlFor="fileInput">
+                    {selectedFile ? selectedFile.name : 'Drop signature here'}
+                  </label>
+                  <input
+                    type="file"
+                    id="fileInput"
+                    style={{ display: 'none' }}
+                    onChange={handleFileChange}
+                  />
                 </div>
+
               </div>
               <Text
                 className="common-pointer bg-blue-A700 h-[54px] flex items-center justify-center mt-5 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"
