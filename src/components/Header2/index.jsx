@@ -48,7 +48,7 @@ const Header2 = (props) => {
             >
               <>
                 Hi, <br />
-                Dr. Marcus
+                {props.patient_name}
               </>
             </Text>
           </div>
