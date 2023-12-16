@@ -13,13 +13,13 @@ const Header2 = (props) => {
         <div className="flex h-12 md:h-[196px] justify-end mb-[148px] md:ml-[0] ml-[15px] md:mt-0 mt-[34px] relative w-[155px]">
           <Img
             className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-            src="images/img_image15.png"
+            src={process.env.PUBLIC_URL + "/images/img_image15.png"}
             alt="imageFifteen"
           />
           <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
             <Img
               className="h-7 md:h-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen_One"
             />
             <Text
