@@ -131,7 +131,7 @@ const AnalysisPageRayanDrJokerTwo = () => {
                         <Text
                           className="common-pointer bg-blue-A700 h-[54px] flex justify-center items-center pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[512px]"
                           size="txtManropeMedium30"
-                          onClick={() => navigate("/createanalysis")}
+                          onClick={() => navigate("/create/analysis/joker/rayan")}
                         >
                           Create Analysis
                         </Text>

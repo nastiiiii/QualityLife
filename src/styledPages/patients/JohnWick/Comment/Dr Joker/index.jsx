@@ -30,7 +30,7 @@ const MainChatPageJohnJoker = () => {
                     </Text>
                     <Button
                       className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl"
-                      onClick={() => navigate("/main")}
+                      onClick={() => navigate("/main/chat/wick/joker")}
                       shape="round"
                       color="indigo_A700"
                       size="xs"
@@ -56,7 +56,7 @@ const MainChatPageJohnJoker = () => {
                   <div className="flex flex-col gap-12 items-center justify-start w-full">
                     <div
                       className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                      onClick={() => navigate("/analysis")}
+                      onClick={() => navigate("/analysis/wick/joker")}
                     >
                       <Text
                         className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -72,7 +72,7 @@ const MainChatPageJohnJoker = () => {
                     </div>
                     <div
                       className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                      onClick={() => navigate("/prescriptions")}
+                      onClick={() => navigate("/prescription/wick/joker")}
                     >
                       <Text
                         className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -89,7 +89,8 @@ const MainChatPageJohnJoker = () => {
                   </div>
                   <div
                     className="common-pointer bg-white-A700 flex flex-col items-end justify-end p-6 sm:px-5 rounded-[47px] w-full"
-                    onClick={() => navigate("/createcheckup")}
+                    // THERE ARE NO ROUTE FOR THIS LOGIC
+                    onClick={() => navigate("/createcheckup")} 
                   >
                     <Text
                       className="leading-[100.00%] mt-[58px] text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right w-1/2 sm:w-full"

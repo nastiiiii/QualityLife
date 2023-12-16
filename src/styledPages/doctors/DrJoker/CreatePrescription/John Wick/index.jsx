@@ -193,7 +193,7 @@ const CreatePrescriptionPageJokerJohn = () => {
                 <Text
                   className="common-pointer mt-[95px] text-black-900 text-xl"
                   size="txtManropeRegular20"
-                  onClick={() => navigate("/main")}
+                  onClick={() => navigate("/main/joker/john")}
                 >
                   <>&lt;- Go Back</>
                 </Text>

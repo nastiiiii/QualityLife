@@ -187,7 +187,7 @@ const PrescriptionsPageJokerRayanFirst = () => {
                 <Text
                   className="common-pointer mt-[95px] text-black-900 text-xl"
                   size="txtManropeRegular20"
-                  onClick={() => navigate("/main")}
+                  onClick={() => navigate("/main/joker/rayan")}
                 >
                   <>&lt;- Go Back</>
                 </Text>
@@ -332,7 +332,7 @@ const PrescriptionsPageJokerRayanFirst = () => {
                 <Text
                   className="common-pointer bg-blue-A700 h-[54px] justify-center pb-0.5 pt-2.5 sm:px-5 px-[21px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[318px]"
                   size="txtManropeMedium30"
-                  onClick={() => navigate("/createprescription")}
+                  onClick={() => navigate("/create/prescription/joker/rayan")}
                 >
                   Create Prescription
                 </Text>

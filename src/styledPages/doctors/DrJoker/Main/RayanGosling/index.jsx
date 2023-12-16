@@ -32,7 +32,7 @@ const MainPageJokerRayan = () => {
                   <div className="flex flex-col gap-12 items-center justify-start w-full">
                     <div
                       className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                      onClick={() => navigate("/analysis")}
+                      onClick={() => navigate("/analysis/joker/rayan/first")}
                     >
                       <Text
                         className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -48,7 +48,7 @@ const MainPageJokerRayan = () => {
                     </div>
                     <div
                       className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                      onClick={() => navigate("/prescriptions")}
+                      onClick={() => navigate("/prescription/joker/rayan/first")}
                     >
                       <Text
                         className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -66,7 +66,7 @@ const MainPageJokerRayan = () => {
                 </div>
                 <div
                   className="common-pointer bg-white-A700 flex flex-col items-end justify-end p-6 sm:px-5 rounded-[47px] w-full"
-                  onClick={() => navigate("/createcheckup")}
+                  onClick={() => navigate("/checkup/joker/rayan")}
                 >
                   <Text
                     className="leading-[100.00%] mt-[58px] text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right w-1/2 sm:w-full"
@@ -91,7 +91,7 @@ const MainPageJokerRayan = () => {
                 </div>
                 <Button
                   className="common-pointer cursor-pointer font-medium min-w-[157px] md:ml-[0] ml-[361px] mr-[66px] mt-[15px] text-center text-xl"
-                  onClick={() => navigate("/mainchat")}
+                  onClick={() => navigate("/main/chat/joker/rayan")}
                   shape="round"
                   color="white_A700"
                   size="xs"

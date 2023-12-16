@@ -32,7 +32,7 @@ const AnalysisOnePageJohnJoker = () => {
           <div className="absolute bottom-[0] flex flex-row items-center justify-start p-1.5 right-[0] w-[19%]">
             <Img
               className="h-[22px] ml-[5px] w-[21px]"
-              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
+              src={process.env.PUBLIC_URL + "images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -43,7 +43,7 @@ const AnalysisOnePageJohnJoker = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
+              src={process.env.PUBLIC_URL + "images/img_location.svg"}
               alt="location"
             />
             <Button
@@ -125,7 +125,7 @@ const AnalysisOnePageJohnJoker = () => {
                       <div
                         className="common-pointer whitespace-normal h-[54px] flex justify-center items-center pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[512px]"
                         size="txtManropeMedium30"
-                        onClick={() => navigate("/createanalysis")}
+                        onClick={() => navigate("/analysis/wick/joker")}
                       >
 
                       </div>

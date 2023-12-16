@@ -40,7 +40,7 @@ const MainOnePageJohnJoker = () => {
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
                   <div
                     className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                    onClick={() => navigate("/analysisone")}
+                    onClick={() => navigate("/analysis/wick/joker")}
                   >
                     <Text
                       className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -56,7 +56,7 @@ const MainOnePageJohnJoker = () => {
                   </div>
                   <div
                     className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                    onClick={() => navigate("/prescriptionsone")}
+                    onClick={() => navigate("/prescription/wick/joker")}
                   >
                     <Text
                       className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
