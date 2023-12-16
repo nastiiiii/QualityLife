@@ -9,6 +9,8 @@ import "./local.css"
 const Header = (props) => {
   const navigate = useNavigate();
 
+  console.log(props)
+
   return (
     <>
       <header className={props.className}>
@@ -193,7 +195,7 @@ const Header = (props) => {
             >
               <>
                 Hi, <br />
-                Dr. Marcus
+                {props.doctor_name}
               </>
             </Text>
           </div>
