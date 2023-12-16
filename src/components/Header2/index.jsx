@@ -6,6 +6,7 @@ import { Button, Img, Text } from "components";
 
 const Header2 = (props) => {
   const navigate = useNavigate();
+  const redirect = props.redirect;
 
   return (
     <>
@@ -37,7 +38,7 @@ const Header2 = (props) => {
               <Text
                 className="common-pointer mt-[95px] text-black-900 text-xl"
                 size="txtManropeRegular20"
-                onClick={() => navigate("/mainone")}
+                onClick={() => navigate(redirect)}
               >
                 <>&lt;- Go Back</>
               </Text>

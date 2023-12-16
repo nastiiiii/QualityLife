@@ -8,6 +8,7 @@ import "./local.css"
 
 const Header = (props) => {
   const navigate = useNavigate();
+  const redirect = props.redirect;
 
   return (
     <>
@@ -182,7 +183,7 @@ const Header = (props) => {
               <Text
                 className="common-pointer mt-[95px] text-black-900 text-xl"
                 size="txtManropeRegular20"
-                onClick={() => navigate("/main")}
+                onClick={() => navigate(redirect)}
               >
                 <>&lt;- Go Back</>
               </Text>
