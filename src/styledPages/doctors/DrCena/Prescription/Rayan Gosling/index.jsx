@@ -263,7 +263,7 @@ const PrescriptionsPageCenaRayan = () => {
                   className="ml-0.5 md:ml-[0] md:text-3xl sm:text-[28px] text-[32px] text-indigo-A700"
                   size="txtManropeBold32IndigoA700"
                 >
-                  John Wick
+                  Rayan Gos
                 </Text>
               </div>
               <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-start justify-start p-3 rounded-[21px] w-full">
