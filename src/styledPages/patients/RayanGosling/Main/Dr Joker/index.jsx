@@ -50,7 +50,7 @@ const MainOnePageRayanJoker = () => {
                     </Text>
                     <Img
                       className="h-[71px] md:h-auto mb-3 mr-[27px] mt-[31px] object-cover rounded-lg"
-                      src="images/img_rectangle69.png"
+                      src={process.env.PUBLIC_URL + "/images/img_rectangle69.png"}
                       alt="rectangleFortyFive"
                     />
                   </div>
@@ -66,7 +66,7 @@ const MainOnePageRayanJoker = () => {
                     </Text>
                     <Img
                       className="h-[71px] md:h-auto mt-[55px] object-cover rounded-lg w-[26%]"
-                      src="images/img_rectangle70.png"
+                      src={process.env.PUBLIC_URL + "/images/img_rectangle70.png"}
                       alt="rectangleFortySix"
                     />
                   </div>
@@ -121,14 +121,14 @@ const MainOnePageRayanJoker = () => {
             <div className="flex h-12 md:h-[67px] justify-end mt-[19px] relative w-[155px]">
               <Img
                 className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen"
               />
 
               <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
                 <Img
                   className="h-7 md:h-auto object-cover w-[27px]"
-                  src="images/img_image15.png"
+                  src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                   alt="imageFifteen_One"
                 />
                 <Text
@@ -183,7 +183,7 @@ const MainOnePageRayanJoker = () => {
         <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
           <Img
             className="h-[22px] ml-[5px] w-[21px]"
-            src="images/img_search.svg"
+            src={process.env.PUBLIC_URL + "/images/img_search.svg"}
             alt="search"
           />
           <Text
@@ -194,7 +194,7 @@ const MainOnePageRayanJoker = () => {
           </Text>
           <Img
             className="h-[21px] ml-[61px]"
-            src="images/img_location.svg"
+            src={process.env.PUBLIC_URL + "/images/img_location.svg"}
             alt="location"
           />
           <Button

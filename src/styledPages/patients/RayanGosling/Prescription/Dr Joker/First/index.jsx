@@ -12,13 +12,13 @@ const PrescriptionsOnePageRayanJokerFirst = () => {
           <div className="flex h-12 md:h-[67px] justify-end sm:mt-0 mt-[19px] relative w-[155px]">
             <Img
               className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen"
             />
             <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
               <Img
                 className="h-7 md:h-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen_One"
               />
               <Text
@@ -72,7 +72,7 @@ const PrescriptionsOnePageRayanJokerFirst = () => {
           <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
             <Img
               className="h-[22px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -83,7 +83,7 @@ const PrescriptionsOnePageRayanJokerFirst = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button
