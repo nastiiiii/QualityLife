@@ -18,7 +18,7 @@ const CreateAnalysisPageJokerJohn = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[25px] w-full">
         <div className="flex flex-col gap-[23px] items-center justify-start max-w-[1461px] mx-auto md:px-5 w-full">
-          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" />
+          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" doctor_name="Dr. Joker"/>
           <div className="flex md:flex-col flex-row gap-[13px] items-center justify-between w-[99%] md:w-full">
             <div className="bg-gray-200 flex flex-col items-center justify-end mb-[17px] p-3.5 rounded-[53px] w-4/5 md:w-full">
               <div className="flex md:flex-col flex-row gap-[29px] items-center justify-start mt-[19px] w-[97%] md:w-full">
