@@ -42,12 +42,12 @@ const MainChatPageCenaRayan = () => {
                 </div>
                 <Img
                   className="h-[26px] md:mt-0 mt-[17px]"
-                  src="images/img_settings.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_settings.svg"}
                   alt="settings"
                 />
                 <Img
                   className="h-[26px] md:ml-[0] ml-[31px] md:mt-0 mt-[17px]"
-                  src="images/img_arrowright.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_arrowright.svg"}
                   alt="arrowright"
                 />
               </div>
@@ -66,7 +66,7 @@ const MainChatPageCenaRayan = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mb-3 mr-[27px] mt-[31px] object-cover rounded-lg"
-                        src="images/img_rectangle69.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle69.png"}
                         alt="rectangleSixtyFour"
                       />
                     </div>
@@ -82,7 +82,7 @@ const MainChatPageCenaRayan = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mt-[55px] object-cover rounded-lg w-[26%]"
-                        src="images/img_rectangle70.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle70.png"}
                         alt="rectangleSixtyFive"
                       />
                     </div>
@@ -122,7 +122,7 @@ const MainChatPageCenaRayan = () => {
           <div className="absolute bottom-[0] flex flex-row items-start justify-start right-[1%] w-[17%]">
             <Img
               className="h-[22px] mt-[3px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -133,7 +133,7 @@ const MainChatPageCenaRayan = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px] mt-[3px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button
@@ -148,14 +148,14 @@ const MainChatPageCenaRayan = () => {
             <div className="flex h-12 justify-end md:mt-0 mt-[19px] relative w-[155px]">
               <Img
                 className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen"
               />
 
               <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
                 <Img
                   className="h-7 md:h-auto object-cover w-[27px]"
-                  src="images/img_image15.png"
+                  src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                   alt="imageFifteen_One"
                 />
                 <Text
@@ -175,7 +175,7 @@ const MainChatPageCenaRayan = () => {
                   <div className="bg-indigo-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                     <Img
                       className="h-10 md:h-auto object-cover w-[93%]"
-                      src="images/img_calendarwithc.png"
+                      src={process.env.PUBLIC_URL + "/images/img_calendarwithc.png"}
                       alt="calendarwithc"
                     />
                   </div>
@@ -197,7 +197,7 @@ const MainChatPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowleft.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                         alt="arrowleft"
                       />
                       <Text
@@ -227,7 +227,7 @@ const MainChatPageCenaRayan = () => {
                   >
                     <Img
                       className="h-9"
-                      src="images/img_group1387.png"
+                      src={process.env.PUBLIC_URL + "/images/img_group1387.png"}
                       alt="group1387"
                     />
                   </Button>
@@ -249,7 +249,7 @@ const MainChatPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowleft.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                         alt="arrowleft"
                       />
                       <Text
@@ -273,7 +273,7 @@ const MainChatPageCenaRayan = () => {
                   <div className="bg-green-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                     <Img
                       className="h-10 md:h-auto object-cover w-[68%]"
-                      src="images/img_3dsyringe1.png"
+                      src={process.env.PUBLIC_URL + "/images/img_3dsyringe1.png"}
                       alt="3dsyringeOne"
                     />
                   </div>
@@ -295,7 +295,7 @@ const MainChatPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowup.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowup.svg"}
                         alt="arrowup"
                       />
                       <Text

@@ -93,7 +93,7 @@ const CreateCheckUpPageJokerJohn = () => {
                   <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-200 md:w-full">
                     <img
                       className="h-8 ml-[86px] w-[31px]"
-                      src="images/img_vector.svg"
+                      src={process.env.PUBLIC_URL + "/images/img_vector.svg"}
                       alt="vector"
                     />
                     <label className="text-black-900 text-xl" htmlFor="fileInput">
@@ -185,7 +185,7 @@ const CreateCheckUpPageJokerJohn = () => {
               <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
                 <Img
                   className="h-[22px] w-[21px]"
-                  src="images/img_search.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_search.svg"}
                   alt="search"
                 />
                 <Text
@@ -196,7 +196,7 @@ const CreateCheckUpPageJokerJohn = () => {
                 </Text>
                 <Img
                   className="h-[21px] ml-[61px]"
-                  src="images/img_location.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_location.svg"}
                   alt="location"
                 />
                 <Button
