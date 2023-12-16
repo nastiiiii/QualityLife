@@ -2,6 +2,15 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
+import AnalysisPageJohnWickDrJoker from "./styledPages/doctors/DrJoker/Analysis/JohnWick";
+import AnalysisPageRayanDrJokerOne from "./styledPages/doctors/DrJoker/Analysis/RayanGosling/FirstAnalysis";
+import AnalysisPageRayanDrJokerTwo from "./styledPages/doctors/DrJoker/Analysis/RayanGosling/SecondAnalysis";
+import MainPageCenaRayan from "./styledPages/doctors/DrCena/Main/RayanGosling";
+import MainPageJokerJohnWick from "./styledPages/doctors/DrJoker/Main/JohnWick";
+import MainPageJokerRayan from "./styledPages/doctors/DrJoker/Main/RayanGosling";
+import CreateAnalysisPageJokerJohn from "./styledPages/doctors/DrJoker/CreateAnalysis/JohnWick";
+import CreateAnalysisPageJokerRayan from "./styledPages/doctors/DrJoker/CreateAnalysis/RayanGosling";
+import CreateAnalysisPageCenaRayan from "./styledPages/doctors/DrCena/CreateAnalysis/RayanGosling";
 const PrescriptionsOne = React.lazy(() => import("pages/PrescriptionsOne"));
 const AnalysisOne = React.lazy(() => import("pages/AnalysisOne"));
 const MainOne = React.lazy(() => import("pages/MainOne"));
@@ -35,6 +44,7 @@ const ProjectRoutes = () => {
           <Route path="/analysisone" element={<AnalysisOne />} />
           <Route path="/prescriptionsone" element={<PrescriptionsOne />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
+          <Route path={"/haha"} element={<CreateAnalysisPageCenaRayan />} />
         </Routes>
       </Router>
     </React.Suspense>
