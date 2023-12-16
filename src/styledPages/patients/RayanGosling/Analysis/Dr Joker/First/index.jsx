@@ -9,7 +9,7 @@ const AnalysisOnePageRayanJokerFirst = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[22px] w-full">
-        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" />
+        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" patient_name="Rayan Gosling"/>
         <div className="sm:h-[712px] h-[752px] md:h-[945px] max-w-[1467px] mx-auto md:px-5 relative w-full">
           <div className="absolute md:h-[672px] h-[705px] p-3.5 right-[0] top-[0] w-1/5">
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
