@@ -113,15 +113,13 @@ const AnalysisPageRayanDrJokerOne = () => {
                             shape="round"
                             color="indigo_A700"
                           ></Input>
-                          <div className={"mt-3 cursor-pointer cur"}>
-                            <Input
-                              name="date"
-                              placeholder="12/12/2023"
-                              className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full cursor-pointer"
-                              wrapClassName="w-full"
-                              shape="round"
-                              color="gray_400"
-                            ></Input>
+
+                            <div className="bg-gray-400 rounded mt-[18px] w-full h-[50px] z-30" onClick={(e) => {e.stopPropagation(); navigate("/analysis/joker/rayan/second");}}>
+                            <div className="font-semibold p-0 text-black-900">
+                              <Text className="text-left text-xl font-semibold mt-3 ml-3 cursor-pointer">
+                                12/12/2023
+                              </Text>
+                            </div>
                           </div>
                           </div>
 

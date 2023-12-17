@@ -105,14 +105,14 @@ const AnalysisOnePageRayanJokerSecond = () => {
                           Choose Analysis
                         </Text>
                         <div className="flex flex-col items-center justify-start mb-[193px] mx-auto w-[93%] md:w-full">
-                          <Input
-                            name="date"
-                            placeholder="18/12/2023"
-                            className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                            wrapClassName="w-full"
-                            shape="round"
 
-                          ></Input>
+                          <div className="bg-gray-400 rounded mt-[10px] w-full h-[50px] z-30" onClick={(e) => {e.stopPropagation(); navigate("/analysis/gosling/joker/first");}}>
+                            <div className="font-semibold p-0 text-black-900">
+                              <Text className="text-left text-xl font-semibold mt-3 ml-3 cursor-pointer">
+                                18/12/2023
+                              </Text>
+                            </div>
+                          </div>
                           <Input
                             name="date_One"
                             placeholder="12/12/2023"
