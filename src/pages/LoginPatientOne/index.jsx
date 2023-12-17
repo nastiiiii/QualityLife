@@ -1,11 +1,25 @@
-import React from "react";
+import React, {createRef, useRef, useState} from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Text } from "components";
 
+import {verify} from "../../auth/service";
+
 const LoginPatientOnePage = () => {
   const navigate = useNavigate();
+
+  const [login, setLogin] = useState();
+  const [pass, setPass] = useState();
+
+  const loginInput = (event) => {
+    console.log(event.target.value)
+    setLogin(event.target.value)
+  }
+
+  const passInput = (event) => {
+    setPass(event.target.value)
+  }
 
   return (
     <>
@@ -42,27 +56,32 @@ const LoginPatientOnePage = () => {
               </Text>
             </div>
             <div className="flex flex-col items-center justify-start md:ml-[0] ml-[7px] mt-[54px] w-[99%] md:w-full">
-              <Input
+              <input
                 name="group427318867"
                 placeholder="Username"
-                className="font-semibold md:text-[22px] p-0 placeholder:text-black-900_87 sm:text-xl text-2xl text-left w-full"
+                className="font-semibold md:text-[22px] p-0 placeholder:text-black-900_87 sm:text-xl text-2xl text-left w-full pb-[17px] pt-[18px] px-[17px] rounded-md bg-white-A700 text-black-900_87"
                 wrapClassName="border-2 border-blue-A700 border-solid rounded-[21px] w-full"
                 type="text"
                 color="white_A700"
+                onChange={loginInput}
+                value={login}
                 size="lg"
-              ></Input>
-              <Input
+              ></input>
+              <span style={{"paddingTop" : "30px"}}></span>
+              <input
                 name="group427318870"
                 placeholder="Password"
-                className="font-semibold md:text-[22px] p-0 placeholder:text-black-900_87 sm:text-xl text-2xl text-left w-full"
+                className="font-semibold md:text-[22px] p-0 placeholder:text-black-900_87 sm:text-xl text-2xl text-left w-full pb-[17px] pt-[18px] px-[17px] rounded-md bg-white-A700 text-black-900_87"
                 wrapClassName="border-2 border-blue-A700 border-solid mt-[33px] rounded-[21px] w-full"
                 type="password"
                 color="white_A700"
+                onChange={passInput}
+                value={pass}
                 size="lg"
-              ></Input>
+              ></input>
               <Button
                 className="common-pointer cursor-pointer font-bold min-w-[519px] sm:min-w-full mt-24 text-2xl md:text-[22px] text-center sm:text-xl"
-                onClick={() => navigate("/mainone")}
+                onClick={() => navigate(verify(login, pass))}
                 shape="round"
                 color="blue_A700"
                 size="sm"
