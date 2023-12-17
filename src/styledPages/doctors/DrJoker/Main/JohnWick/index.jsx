@@ -310,7 +310,7 @@ const MainPageJokerJohnWick = () => {
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
             <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/joker/john")}>
                 <Text
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
@@ -320,7 +320,7 @@ const MainPageJokerJohnWick = () => {
               </div>
             </div>
             <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/joker/rayan")}>
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"

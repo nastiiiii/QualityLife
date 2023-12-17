@@ -18,7 +18,7 @@ const CreateAnalysisPageJokerRayan = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[25px] w-full">
         <div className="flex flex-col gap-[23px] items-center justify-start max-w-[1461px] mx-auto md:px-5 w-full">
-          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" doctor_name="Dr. Joker"/>
+          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" doctor_name="Dr. Joker" redirect="/main/joker/rayan"/>
           <div className="flex md:flex-col flex-row gap-[13px] items-center justify-between w-[99%] md:w-full">
             <div className="bg-gray-200 flex flex-col items-center justify-end mb-[17px] p-3.5 rounded-[53px] w-4/5 md:w-full">
               <div className="flex md:flex-col flex-row gap-[29px] items-center justify-start mt-[19px] w-[97%] md:w-full">
@@ -183,7 +183,7 @@ const CreateAnalysisPageJokerRayan = () => {
                 <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
                   <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
                   <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/create/analysis/joker/john")}>
                       <Text
                         className="m-auto text-black-900 text-xl"
                         size="txtManropeSemiBold20"
@@ -193,7 +193,7 @@ const CreateAnalysisPageJokerRayan = () => {
                     </div>
                   </div>
                   <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full cursor-pointer">
-                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                    <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/create/analysis/joker/rayan")}>
                       <Text
                         className="m-auto text-white-A700 text-xl"
                         size="txtManropeSemiBold20"
