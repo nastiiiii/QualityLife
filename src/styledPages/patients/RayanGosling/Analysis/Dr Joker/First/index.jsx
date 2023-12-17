@@ -9,14 +9,14 @@ const AnalysisOnePageRayanJokerFirst = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[22px] w-full">
-        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" patient_name="Rayan Gosling"/>
+        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" patient_name="Rayan Gosling" redirect="/main/gosling/joker"/>
         <div className="sm:h-[712px] h-[752px] md:h-[945px] max-w-[1467px] mx-auto md:px-5 relative w-full">
           <div className="absolute md:h-[672px] h-[705px] p-3.5 right-[0] top-[0] w-1/5">
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
               <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
               <div className="bg-gray-400  flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/analysis/gosling/cena")}>
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
@@ -26,7 +26,7 @@ const AnalysisOnePageRayanJokerFirst = () => {
                 </div>
               </div>
               <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/analysis/gosling/joker/first")}>
                   <Text
                     className="m-auto text-white-A700 text-xl"
                     size="txtManropeSemiBold20"

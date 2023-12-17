@@ -26,15 +26,13 @@ const MainOnePageRayanCena = () => {
                 >
                   Dr. Cena
                 </Text>
-                <Button
-                  className="cursor-pointer font-medium min-w-[157px] mt-[25px] text-center text-xl"
-                  shape="round"
-                  color="white_A700"
-                  size="xs"
-                  variant="fill"
+                {/* WHAT THE FUCK; ??????????????????/ITS JUST NOT WORKING?????????????????)))))*/}
+                <div onClick={() => navigate("/main/chat/gosling/cena")}><Text
+                    className="m-auto text-black-900 text-xl"
+                    size="txtManropeSemiBold20"
                 >
                   Comments
-                </Button>
+                </Text></div>
               </div>
               <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-2 w-full">
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
@@ -158,7 +156,7 @@ const MainOnePageRayanCena = () => {
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
             <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/gosling/cena")}>
                 <Text
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
@@ -168,7 +166,7 @@ const MainOnePageRayanCena = () => {
               </div>
             </div>
             <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/gosling/joker")}>
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"

@@ -40,7 +40,7 @@ const MainOnePageRayanJoker = () => {
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
                   <div
                     className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                    onClick={() => navigate("/analisys/gosling/joker/first")}
+                    onClick={() => navigate("/analysis/gosling/joker/first")}
                   >
                     <Text
                       className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -158,7 +158,7 @@ const MainOnePageRayanJoker = () => {
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
             <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/gosling/cena")}>
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
@@ -168,7 +168,7 @@ const MainOnePageRayanJoker = () => {
               </div>
             </div>
             <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+              <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/main/gosling/joker")}>
                 <Text
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
