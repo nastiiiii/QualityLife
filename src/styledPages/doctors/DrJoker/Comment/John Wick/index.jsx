@@ -30,7 +30,7 @@ const MainChatPageJokerJohn = () => {
                     </Text>
                     <Button
                       className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl"
-                      onClick={() => navigate("/main/chat/joker/john")}
+                      onClick={() => navigate("/main/joker/john")}
                       shape="round"
                       color="indigo_A700"
                       size="xs"
@@ -100,22 +100,27 @@ const MainChatPageJokerJohn = () => {
                   </div>
                 </div>
                 <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col md:gap-10 gap-[414px] justify-start mb-[25px] p-2 rounded-[21px] w-[52%] md:w-full">
-                  <Text
-                    className="ml-3 md:ml-[0] text-2xl md:text-[22px] text-black-900_87 sm:text-xl"
+                  <textarea
+                    type={"text"}
+                    className="ml-3 md:ml-[0] text-2xl md:text-[22px] text-black-900_87 sm:text-xl text-black-900 placeholder:text-black-900_87"
                     size="txtManropeSemiBold24Black90087"
+                    placeholder={"Comments"}
                   >
-                    Comments
-                  </Text>
+                  </textarea>
+
+
                   <Button
                     className="cursor-pointer font-medium mb-1.5 min-w-[157px] md:ml-[0] ml-[323px] mr-[21px] text-center text-xl"
                     shape="round"
                     color="indigo_A700"
                     size="xs"
                     variant="fill"
+                    onClick={() => navigate("/main/joker/john")}
                   >
                     Publish
                   </Button>
                 </div>
+
               </div>
             </div>
           </div>
@@ -348,6 +353,7 @@ const MainChatPageJokerJohn = () => {
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
+                  onClick={() => navigate("/main/chat/joker/rayan")}
                 >
                   Rayan Gos
                 </Text>

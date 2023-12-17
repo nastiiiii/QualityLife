@@ -33,8 +33,9 @@ const PrescriptionsOnePageJohnJoker = () => {
             <div className="md:h-[163px] h-[164px] m-auto w-full">
               <div className="absolute bg-blue_gray-100 flex flex-col h-full inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
                 <Text
-                  className="mt-[95px] text-black-900 text-xl"
+                  className="mt-[95px] text-black-900 text-xl z-30"
                   size="txtManropeRegular20"
+                  onClick={() => navigate("/main/wick/joker")}
                 >
                   <>&lt;- Go Back</>
                 </Text>

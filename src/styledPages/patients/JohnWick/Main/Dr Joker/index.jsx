@@ -27,11 +27,12 @@ const MainOnePageJohnJoker = () => {
                   Dr. Joker
                 </Text>
                 <Button
-                  className="cursor-pointer font-medium min-w-[157px] mt-[25px] text-center text-xl"
+                  className="cursor-pointer font-medium min-w-[157px] mt-[25px] text-center text-xl z-30"
                   shape="round"
                   color="white_A700"
                   size="xs"
                   variant="fill"
+                  onClick={() =>navigate("/main/chat/wick/joker")}
                 >
                   Comments
                 </Button>
@@ -153,7 +154,7 @@ const MainOnePageJohnJoker = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[13%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
@@ -163,14 +164,14 @@ const MainOnePageJohnJoker = () => {
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
                 >
-                  Dr.Joker
+                  Dr Joker
                 </Text>
               </div>
             </div>
 
           </div>
         </div>
-        <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
+        <div className="absolute bottom-[5%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
           <Img
             className="h-[22px] ml-[5px] w-[21px]"
             src={process.env.PUBLIC_URL + "/images/img_search.svg"}

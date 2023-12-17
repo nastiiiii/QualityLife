@@ -10,7 +10,7 @@ const MainOnePageRayanCena = () => {
   return (
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-[5px] relative w-full">
-        <div className="absolute md:h-[1415px] sm:h-[842px] h-[944px] inset-[0] justify-center m-auto max-w-[1461px] md:px-5 w-full">
+        <div className="absolute md:h-[1415px] sm:h-[842px] h-[920px] inset-[0] justify-center m-auto max-w-[1461px] md:px-5 w-full">
           <div className="absolute bg-gray-200 bottom-[0] flex flex-col items-center justify-start left-[2%] p-[35px] sm:px-5 rounded-[53px] w-[79%]">
             <div className="flex flex-col items-start justify-start mb-[77px] mt-[34px] w-[96%] md:w-full">
               <Text
@@ -24,15 +24,18 @@ const MainOnePageRayanCena = () => {
                   className="mb-6 md:text-3xl sm:text-[28px] text-[32px] text-indigo-A700"
                   size="txtManropeBold32IndigoA700"
                 >
-                  Dr. Cena
+                  Dr Cena
                 </Text>
-                {/* WHAT THE FUCK; ??????????????????/ITS JUST NOT WORKING?????????????????)))))*/}
-                <div onClick={() => navigate("/main/chat/gosling/cena")}><Text
-                    className="m-auto text-black-900 text-xl"
-                    size="txtManropeSemiBold20"
+                <Button
+                  className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl z-30"
+                  onClick={() => navigate("/main/chat/gosling/cena")}
+                  shape="round"
+                  color="white_A700"
+                  size="xs"
+                  variant="fill"
                 >
                   Comments
-                </Text></div>
+                </Button>
               </div>
               <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-2 w-full">
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
@@ -151,7 +154,7 @@ const MainOnePageRayanCena = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[13%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
@@ -161,7 +164,7 @@ const MainOnePageRayanCena = () => {
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
                 >
-                  Dr.Cena
+                  Dr Cena
                 </Text>
               </div>
             </div>
@@ -171,14 +174,14 @@ const MainOnePageRayanCena = () => {
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
                 >
-                  Dr.Joker
+                  Dr Joker
                 </Text>
               </div>
             </div>
 
           </div>
         </div>
-        <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
+        <div className="absolute bottom-[10%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
           <Img
             className="h-[22px] ml-[5px] w-[21px]"
             src={process.env.PUBLIC_URL + "/images/img_search.svg"}

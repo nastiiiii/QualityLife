@@ -33,8 +33,9 @@ const PrescriptionsOnePageRayanJokerSecond = () => {
             <div className="md:h-[163px] h-[164px] m-auto w-full">
               <div className="absolute bg-blue_gray-100 flex flex-col h-full inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
                 <Text
-                  className="mt-[95px] text-black-900 text-xl"
+                  className="mt-[95px] text-black-900 text-xl z-30"
                   size="txtManropeRegular20"
+                  onClick={() => navigate("/main/gosling/joker")}
                 >
                   <>&lt;- Go Back</>
                 </Text>
@@ -58,6 +59,7 @@ const PrescriptionsOnePageRayanJokerSecond = () => {
               <Text
                 className="bg-gray-400 h-[50px] justify-center mt-[25px] pb-[9px] pl-2.5 sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[219px]"
                 size="txtManropeSemiBold20WhiteA700"
+                onClick={() => navigate("/prescription/gosling/cena")}
               >
                 Dr Cena
               </Text>
@@ -148,12 +150,13 @@ const PrescriptionsOnePageRayanJokerSecond = () => {
                 >
                   Choose Prescription
                 </Text>
-                <Text
-                  className="bg-gray-400 h-[50px] justify-center pb-[9px] pl-4 sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[318px]"
-                  size="txtManropeSemiBold20WhiteA700"
-                >
-                  18/12/2023
-                </Text>
+                <div className="bg-gray-400 rounded mt-[18px] w-full h-[50px] z-30" onClick={(e) => {e.stopPropagation(); navigate("/prescription/gosling/joker/first");}}>
+                  <div className="font-semibold p-0 text-black-900">
+                    <Text className="text-left text-xl font-semibold mt-3 ml-3 cursor-pointer">
+                      18/12/2023
+                    </Text>
+                  </div>
+                </div>
                 <div className={"mt-4"}>
                   <Text
                     className="bg-indigo-A700 h-[50px] justify-center pb-[9px] pl-4 sm:pr-5 pr-[35px] pt-3 rounded-md text-white-A700 text-xl w-[318px]"

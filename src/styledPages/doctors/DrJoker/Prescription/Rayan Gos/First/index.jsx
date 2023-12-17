@@ -320,14 +320,13 @@ const PrescriptionsPageJokerRayanFirst = () => {
                     shape="round"
                     color="indigo_A700"
                   ></Input>
-                  <Input
-                    name="date"
-                    placeholder="12/12/2023"
-                    className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                    wrapClassName="md:ml-[0] ml-[3px] mt-4 w-[97%]"
-                    shape="round"
-                    color="gray_400"
-                  ></Input>
+                  <div className="bg-gray-400 rounded mt-[18px] w-full h-[50px] z-30" onClick={(e) => {e.stopPropagation(); navigate("/prescription/joker/rayan/second");}}>
+                    <div className="font-semibold p-0 text-black-900">
+                      <Text className="text-left text-xl font-semibold mt-3 ml-3 cursor-pointer">
+                        12/12/2023
+                      </Text>
+                    </div>
+                  </div>
                 </div>
                 <Text
                   className="common-pointer bg-blue-A700 h-[54px] justify-center pb-0.5 pt-2.5 sm:px-5 px-[21px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[318px]"

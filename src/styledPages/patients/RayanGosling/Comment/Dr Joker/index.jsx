@@ -11,7 +11,7 @@ const MainChatPageRayanJoker = () => {
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-3 relative w-full">
         <div className="md:h-[1004px] sm:h-[711px] h-[953px] m-auto max-w-[1461px] md:px-5 w-full">
-          <div className="absolute bg-gray-200 bottom-[0] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
+          <div className="absolute bg-gray-200 bottom-[100px] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
             <div className="flex flex-col gap-[21px] items-start justify-start mb-[21px] mt-[13px] w-[96%] md:w-full">
               <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
                 <div className="flex md:flex-1 flex-col items-start justify-start w-[94%] md:w-full">
@@ -29,8 +29,8 @@ const MainChatPageRayanJoker = () => {
                       Dr Joker
                     </Text>
                     <Button
-                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl"
-                      onClick={() => navigate("/main/chat/gosling/joker")}
+                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl z-30"
+                      onClick={() => navigate("/main/gosling/joker")}
                       shape="round"
                       color="indigo_A700"
                       size="xs"
@@ -119,7 +119,7 @@ const MainChatPageRayanJoker = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[0] flex flex-row items-start justify-start right-[1%] w-[17%]">
+          <div className="absolute bottom-[100px] flex flex-row items-start justify-start right-[1%] w-[17%]">
             <Img
               className="h-[22px] mt-[3px] w-[21px]"
               src={process.env.PUBLIC_URL + "/images/img_search.svg"}
@@ -186,7 +186,7 @@ const MainChatPageRayanJoker = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[16%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
@@ -195,6 +195,7 @@ const MainChatPageRayanJoker = () => {
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
+                  onClick={() => navigate("/main/chat/gosling/cena")}
                 >
                   Dr Cena
                 </Text>

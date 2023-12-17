@@ -11,7 +11,7 @@ const MainChatPageJohnJoker = () => {
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-3 relative w-full">
         <div className="md:h-[1004px] sm:h-[711px] h-[953px] m-auto max-w-[1461px] md:px-5 w-full">
-          <div className="absolute bg-gray-200 bottom-[0] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
+          <div className="absolute bg-gray-200 bottom-[100px] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
             <div className="flex flex-col gap-[21px] items-start justify-start mb-[21px] mt-[13px] w-[96%] md:w-full">
               <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
                 <div className="flex md:flex-1 flex-col items-start justify-start w-[94%] md:w-full">
@@ -29,8 +29,8 @@ const MainChatPageJohnJoker = () => {
                       Dr Joker
                     </Text>
                     <Button
-                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl"
-                      onClick={() => navigate("/main/chat/wick/joker")}
+                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl z-40"
+                      onClick={() => navigate("/main/wick/joker")}
                       shape="round"
                       color="indigo_A700"
                       size="xs"
@@ -86,19 +86,30 @@ const MainChatPageJohnJoker = () => {
                         alt="rectangleSixtyFive"
                       />
                     </div>
-                  </div>
-                  <div
-                    className="common-pointer bg-white-A700 flex flex-col items-end justify-end p-6 sm:px-5 rounded-[47px] w-full"
-                    // THERE ARE NO ROUTE FOR THIS LOGIC
-                    onClick={() => navigate("/createcheckup")} 
-                  >
+                  </div><div className="bg-white-A700 flex flex-col items-start justify-start p-[22px] sm:px-5 rounded-[47px] w-full">
+                  <div className="flex flex-col gap-4 justify-start mb-[18px] mt-1.5 w-[92%] md:w-full">
                     <Text
-                      className="leading-[100.00%] mt-[58px] text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right w-1/2 sm:w-full"
-                      size="txtManropeMedium30Black900"
+                      className="text-3xl sm:text-[26px] md:text-[28px] text-black-900"
+                      size="txtManropeExtraBold30"
                     >
-                      Make checkup
+                      You have checkup
                     </Text>
+                    <div className="flex flex-row items-center justify-between ml-1.5 md:ml-[0] w-[98%] md:w-full">
+                      <Text
+                        className="text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right"
+                        size="txtManropeMedium30Black900"
+                      >
+                        12/12/2023
+                      </Text>
+                      <Text
+                        className="text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right"
+                        size="txtManropeMedium30Black900"
+                      >
+
+                      </Text>
+                    </div>
                   </div>
+                </div>
                 </div>
                 <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col md:gap-10 gap-[414px] justify-start mb-[25px] p-2 rounded-[21px] w-[52%] md:w-full">
                   <Text
@@ -120,7 +131,7 @@ const MainChatPageJohnJoker = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[0] flex flex-row items-start justify-start right-[1%] w-[17%]">
+          <div className="absolute bottom-[90px] flex flex-row items-start justify-start right-[1%] w-[17%]">
             <Img
               className="h-[22px] mt-[3px] w-[21px]"
               src={process.env.PUBLIC_URL + "/images/img_search.svg"}
@@ -187,7 +198,7 @@ const MainChatPageJohnJoker = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[13%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>

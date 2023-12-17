@@ -215,6 +215,7 @@ const PrescriptionsPageJokerRayanSecond = () => {
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
+                    onClick={() => navigate("/prescription/joker/john")}
                   >
                     John Wick
                   </Text>
@@ -312,14 +313,13 @@ const PrescriptionsPageJokerRayanSecond = () => {
                   >
                     Choose Prescription
                   </Text>
-                  <Input
-                    name="date"
-                    placeholder="18/12/2023"
-                    className="font-semibold p-0 placeholder:text-black-900 text-left text-xl w-full"
-                    wrapClassName="md:ml-[0] ml-[3px] mt-4 w-[97%]"
-                    shape="round"
-                    color="gray_400"
-                  ></Input>
+                  <div className="bg-gray-400 rounded mt-[18px] w-full h-[50px] z-30" onClick={(e) => {e.stopPropagation(); navigate("/prescription/joker/rayan/first");}}>
+                  <div className="font-semibold p-0 text-black-900">
+                    <Text className="text-left text-xl font-semibold mt-3 ml-3 cursor-pointer">
+                      18/12/2023
+                    </Text>
+                  </div>
+                </div>
                   <Input
                     name="date"
                     placeholder="12/12/2023"
