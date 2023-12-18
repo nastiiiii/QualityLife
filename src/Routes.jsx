@@ -21,6 +21,11 @@ import CreateAnalysisPageJokerRayan from "./styledPages/doctors/DrJoker/CreateAn
 import PrescriptionsPageJokerJohn from "./styledPages/doctors/DrJoker/Prescription/John Wick";
 import PrescriptionsPageJokerRayanFirst from "./styledPages/doctors/DrJoker/Prescription/Rayan Gos/First";
 import PrescriptionsPageJokerRayanSecond from "./styledPages/doctors/DrJoker/Prescription/Rayan Gos/Second";
+// New data
+import AnalysisPageJohnWickDrJokerNewFirst from "./styledPages/newdata/DrJoker/Analysis/JohnWick/First";
+import AnalysisPageJohnWickDrJokerNewSecond from "./styledPages/newdata/DrJoker/Analysis/JohnWick/Second";
+import PrescriptionsPageJokerJohnNewFirst from "./styledPages/newdata/DrJoker/Prescription/John Wick/First";
+import PrescriptionsPageJokerJohnNewSecond from "./styledPages/newdata/DrJoker/Prescription/John Wick/Second";
 
 // Dr Cena Rayan
 import AnalysisPageCenaRayan from "./styledPages/doctors/DrCena/Analysis/Rayan Gos";
@@ -37,6 +42,14 @@ import AnalysisOnePageJohnJoker from "./styledPages/patients/JohnWick/Analysis/D
 import MainChatPageJohnJoker from "./styledPages/patients/JohnWick/Comment/Dr Joker";
 import MainOnePageJohnJoker from "./styledPages/patients/JohnWick/Main/Dr Joker";
 import PrescriptionsOnePageJohnJoker from "./styledPages/patients/JohnWick/Prescription/Dr Joker";
+// New data
+import AnalysisOnePageJohnJokerNewFirst from "./styledPages/newdata/JohnWick/Analysis/Dr Joker/First";
+import AnalysisOnePageJohnJokerNewSecond from "./styledPages/newdata/JohnWick/Analysis/Dr Joker/Second";
+import MainChatPageJohnJokerNew from "./styledPages/newdata/JohnWick/Comment/Dr Joker";
+import MainOnePageJohnJokerNew from "./styledPages/newdata/JohnWick/Main/Dr Joker";
+import PrescriptionsOnePageJohnJokerNewFirst from "./styledPages/newdata/JohnWick/Prescription/Dr Joker/First";
+import PrescriptionsOnePageJohnJokerNewSecond from "./styledPages/newdata/JohnWick/Prescription/Dr Joker/Second";
+
 // Rayan Gosling
 import AnalysisOnePageRayanCena from "./styledPages/patients/RayanGosling/Analysis/Dr Cena";
 import AnalysisOnePageRayanJokerFirst from "./styledPages/patients/RayanGosling/Analysis/Dr Joker/First";
@@ -103,7 +116,12 @@ const ProjectRoutes = () => {
           <Route path="/prescription/joker/john" element={<PrescriptionsPageJokerJohn/>}/>
           <Route path="/prescription/joker/rayan/first" element={<PrescriptionsPageJokerRayanFirst/>}/>
           <Route path="/prescription/joker/rayan/second" element={<PrescriptionsPageJokerRayanSecond/>}/>
-
+          {/* New data */}
+          <Route path="/analysis/new/joker/john/first" element={<AnalysisPageJohnWickDrJokerNewFirst/>}/>
+          <Route path="/analysis/new/joker/john/second" element={<AnalysisPageJohnWickDrJokerNewSecond/>}/>
+          <Route path="/prescription/new/joker/john/first" element={<PrescriptionsPageJokerJohnNewFirst/>}/>
+          <Route path="/prescription/new/joker/john/second" element={<PrescriptionsPageJokerJohnNewSecond/>}/>
+          
           {/* Dr Cena Rayan */}
           <Route path="/analysis/cena/rayan" element={<AnalysisPageCenaRayan/>}/>
           <Route path="/main/chat/cena/rayan" element={<MainChatPageCenaRayan/>}/>
@@ -119,6 +137,13 @@ const ProjectRoutes = () => {
           <Route path="/main/chat/wick/joker" element={<MainChatPageJohnJoker/>}/>
           <Route path="/main/wick/joker" element={<MainOnePageJohnJoker/>}/>
           <Route path="/prescription/wick/joker" element={<PrescriptionsOnePageJohnJoker/>}/>
+          {/* New data */}
+          <Route path="/analysis/new/wick/joker/first" element={<AnalysisOnePageJohnJokerNewFirst/>}/>
+          <Route path="/analysis/new/wick/joker/second" element={<AnalysisOnePageJohnJokerNewSecond/>}/>
+          <Route path="/main/new/chat/wick/joker" element={<MainChatPageJohnJokerNew/>}/>
+          <Route path="/main/new/wick/joker" element={<MainOnePageJohnJokerNew/>}/>
+          <Route path="/prescription/new/wick/joker/first" element={<PrescriptionsOnePageJohnJokerNewFirst/>}/>
+          <Route path="/prescription/new/wick/joker/second" element={<PrescriptionsOnePageJohnJokerNewSecond/>}/>
 
           {/* Rayan Gosling */}
           <Route path="/analysis/gosling/cena" element={<AnalysisOnePageRayanCena/>}/>
