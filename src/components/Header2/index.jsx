@@ -6,6 +6,7 @@ import { Button, Img, Text } from "components";
 
 const Header2 = (props) => {
   const navigate = useNavigate();
+  const redirect = props.redirect;
 
   return (
     <>
@@ -13,13 +14,13 @@ const Header2 = (props) => {
         <div className="flex h-12 md:h-[196px] justify-end mb-[148px] md:ml-[0] ml-[15px] md:mt-0 mt-[34px] relative w-[155px]">
           <Img
             className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-            src="images/img_image15.png"
+            src={process.env.PUBLIC_URL + "/images/img_image15.png"}
             alt="imageFifteen"
           />
           <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
             <Img
               className="h-7 md:h-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen_One"
             />
             <Text
@@ -35,9 +36,9 @@ const Header2 = (props) => {
           <div className="md:h-[163px] h-[164px] m-auto w-full">
             <div className="absolute bg-blue_gray-100 flex flex-col h-full inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
               <Text
-                className="common-pointer mt-[95px] text-black-900 text-xl"
+                className="common-pointer mt-[95px] text-black-900 text-xl z-30"
                 size="txtManropeRegular20"
-                onClick={() => navigate("/mainone")}
+                onClick={() => navigate(redirect)}
               >
                 <>&lt;- Go Back</>
               </Text>
@@ -48,7 +49,7 @@ const Header2 = (props) => {
             >
               <>
                 Hi, <br />
-                Dr. Marcus
+                {props.patient_name}
               </>
             </Text>
           </div>

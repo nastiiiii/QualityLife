@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ErrorMessage } from "../../components/ErrorMessage";
+import { useNavigate } from "react-router-dom";
 
 const variants = {
   fill: {
@@ -35,12 +36,18 @@ const Input = React.forwardRef(
       size = "sm",
       variant = "fill",
       color = "gray_400",
+      onClick, // Added onClick prop
       ...restProps
     },
     ref,
   ) => {
     const handleChange = (e) => {
       if (onChange) onChange(e?.target?.value);
+    };
+    const handleClick = () => {
+      if (onClick) {
+        onClick(); // Call the onClick function passed from the parent component if available
+      }
     };
 
     return (
@@ -50,6 +57,7 @@ const Input = React.forwardRef(
               ${shapes[shape] || ""} 
               ${variants[variant]?.[color] || ""} 
               ${sizes[size] || ""}`}
+              onClick={handleClick}
         >
           {!!label && label}
           {!!prefix && prefix}
@@ -80,6 +88,7 @@ Input.propTypes = {
   size: PropTypes.oneOf(["xs", "sm", "md", "lg"]),
   variant: PropTypes.oneOf(["fill"]),
   color: PropTypes.oneOf(["white_A700", "indigo_A700", "gray_400"]),
+  onClick: PropTypes.func,
 };
 
 export { Input };

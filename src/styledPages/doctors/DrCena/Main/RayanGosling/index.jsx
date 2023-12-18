@@ -32,7 +32,7 @@ const MainPageCenaRayan = () => {
                   <div className="flex flex-col gap-12 items-center justify-start w-full">
                     <div
                       className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                      onClick={() => navigate("/analysis")}
+                      onClick={() => navigate("/analysis/cena/rayan")}
                     >
                       <Text
                         className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -42,13 +42,13 @@ const MainPageCenaRayan = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mb-3 mr-[27px] mt-[31px] object-cover rounded-lg"
-                        src="images/img_rectangle69.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle69.png"}
                         alt="rectangleSixtyNine"
                       />
                     </div>
                     <div
                       className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                      onClick={() => navigate("/prescriptions")}
+                      onClick={() => navigate("/prescription/cena/rayan")}
                     >
                       <Text
                         className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -58,7 +58,7 @@ const MainPageCenaRayan = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mt-[55px] object-cover rounded-lg w-[26%]"
-                        src="images/img_rectangle70.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle70.png"}
                         alt="rectangleSeventy"
                       />
                     </div>
@@ -66,7 +66,7 @@ const MainPageCenaRayan = () => {
                 </div>
                 <div
                   className="common-pointer bg-white-A700 flex flex-col items-end justify-end p-6 sm:px-5 rounded-[47px] w-full"
-                  onClick={() => navigate("/createcheckup")}
+                  onClick={() => navigate("/checkup/cena/rayan")}
                 >
                   <Text
                     className="leading-[100.00%] mt-[58px] text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right w-1/2 sm:w-full"
@@ -80,18 +80,18 @@ const MainPageCenaRayan = () => {
                 <div className="flex flex-row gap-[31px] items-center justify-end md:ml-[0] ml-[519px] w-[12%] md:w-full">
                   <Img
                     className="h-[26px]"
-                    src="images/img_settings.svg"
+                    src={process.env.PUBLIC_URL + "/images/img_settings.svg"}
                     alt="settings"
                   />
                   <Img
                     className="h-[26px]"
-                    src="images/img_arrowright.svg"
+                    src={process.env.PUBLIC_URL + "/images/img_arrowright.svg"}
                     alt="arrowright"
                   />
                 </div>
                 <Button
                   className="common-pointer cursor-pointer font-medium min-w-[157px] md:ml-[0] ml-[361px] mr-[66px] mt-[15px] text-center text-xl"
-                  onClick={() => navigate("/mainchat")}
+                  onClick={() => navigate("/main/chat/cena/rayan")}
                   shape="round"
                   color="white_A700"
                   size="xs"
@@ -126,7 +126,7 @@ const MainPageCenaRayan = () => {
             <div className="flex h-12 justify-end md:mt-0 mt-[19px] relative w-[155px]">
               <Img
                 className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen"
               />
               <Text
@@ -146,7 +146,7 @@ const MainPageCenaRayan = () => {
                   <div className="bg-indigo-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                     <Img
                       className="h-10 md:h-auto object-cover w-[93%]"
-                      src="images/img_calendarwithc.png"
+                      src={process.env.PUBLIC_URL + "/images/img_calendarwithc.png"}
                       alt="calendarwithc"
                     />
                   </div>
@@ -168,7 +168,7 @@ const MainPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowleft.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                         alt="arrowleft"
                       />
                       <Text
@@ -198,7 +198,7 @@ const MainPageCenaRayan = () => {
                   >
                     <Img
                       className="h-9"
-                      src="images/img_group1387.png"
+                      src={process.env.PUBLIC_URL + "/images/img_group1387.png"}
                       alt="group1387"
                     />
                   </Button>
@@ -220,7 +220,7 @@ const MainPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowleft.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                         alt="arrowleft"
                       />
                       <Text
@@ -244,7 +244,7 @@ const MainPageCenaRayan = () => {
                   <div className="bg-green-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                     <Img
                       className="h-10 md:h-auto object-cover w-[68%]"
-                      src="images/img_3dsyringe1.png"
+                      src={process.env.PUBLIC_URL + "/images/img_3dsyringe1.png"}
                       alt="3dsyringeOne"
                     />
                   </div>
@@ -266,7 +266,7 @@ const MainPageCenaRayan = () => {
                     <div className="flex flex-row items-center justify-start w-auto">
                       <Img
                         className="h-[17px] w-[17px]"
-                        src="images/img_arrowup.svg"
+                        src={process.env.PUBLIC_URL + "/images/img_arrowup.svg"}
                         alt="arrowup"
                       />
                       <Text
@@ -324,7 +324,7 @@ const MainPageCenaRayan = () => {
         <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
           <Img
             className="h-[22px] ml-[5px] w-[21px]"
-            src="images/img_search.svg"
+            src={process.env.PUBLIC_URL + "/images/img_search.svg"}
             alt="search"
           />
           <Text
@@ -335,7 +335,7 @@ const MainPageCenaRayan = () => {
           </Text>
           <Img
             className="h-[21px] ml-[61px]"
-            src="images/img_location.svg"
+            src={process.env.PUBLIC_URL + "/images/img_location.svg"}
             alt="location"
           />
           <Button

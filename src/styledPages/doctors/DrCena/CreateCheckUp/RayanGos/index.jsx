@@ -17,7 +17,7 @@ const CreateCheckUpPageCenaRayan = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[25px] w-full">
         <div className="flex flex-col gap-[23px] items-center justify-start max-w-[1461px] mx-auto md:px-5 w-full">
-          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" />
+          <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center w-full" doctor_name="Dr. Cena" redirect="/main/cena/rayan"/>
           <div className="flex md:flex-col flex-row gap-[13px] items-center justify-between w-[99%] md:w-full">
             <div className="bg-gray-200 flex flex-col items-center justify-end mb-[17px] p-[17px] rounded-[53px] w-4/5 md:w-full">
               <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-4 w-[97%] md:w-full">
@@ -93,7 +93,7 @@ const CreateCheckUpPageCenaRayan = () => {
                   <div className="border border-black-900_4c border-solid flex flex-row gap-9 items-center justify-start mt-[33px] p-[19px] w-200 md:w-full">
                     <img
                       className="h-8 ml-[86px] w-[31px]"
-                      src="images/img_vector.svg"
+                      src={process.env.PUBLIC_URL + "/images/img_vector.svg"}
                       alt="vector"
                     />
                     <label className="text-black-900 text-xl" htmlFor="fileInput">
@@ -175,7 +175,7 @@ const CreateCheckUpPageCenaRayan = () => {
               <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
                 <Img
                   className="h-[22px] w-[21px]"
-                  src="images/img_search.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_search.svg"}
                   alt="search"
                 />
                 <Text
@@ -186,7 +186,7 @@ const CreateCheckUpPageCenaRayan = () => {
                 </Text>
                 <Img
                   className="h-[21px] ml-[61px]"
-                  src="images/img_location.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_location.svg"}
                   alt="location"
                 />
                 <Button

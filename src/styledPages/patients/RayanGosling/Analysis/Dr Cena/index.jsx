@@ -9,14 +9,14 @@ const AnalysisOnePageRayanCena = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[22px] w-full">
-        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" />
+        <Header2 className="flex md:flex-col flex-row md:gap-5 items-center justify-between md:px-5 w-full" patient_name="Rayan Gosling" redirect={"/main/gosling/cena"}/>
         <div className="sm:h-[712px] h-[752px] md:h-[945px] max-w-[1467px] mx-auto md:px-5 relative w-full">
           <div className="absolute md:h-[672px] h-[705px] p-3.5 right-[0] top-[0] w-1/5">
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
               <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
               <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/analysis/gosling/cena")}>
                   <Text
                     className="m-auto text-white-A700 text-xl"
                     size="txtManropeSemiBold20"
@@ -26,7 +26,7 @@ const AnalysisOnePageRayanCena = () => {
                 </div>
               </div>
               <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/analysis/gosling/joker/first")}>
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
@@ -41,7 +41,7 @@ const AnalysisOnePageRayanCena = () => {
           <div className="absolute bottom-[0] flex flex-row items-center justify-start p-1.5 right-[0] w-[19%]">
             <Img
               className="h-[22px] ml-[5px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -52,7 +52,7 @@ const AnalysisOnePageRayanCena = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button
@@ -134,7 +134,7 @@ const AnalysisOnePageRayanCena = () => {
                       <div
                         className="common-pointer whitespace-normal h-[54px] flex justify-center items-center pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[512px]"
                         size="txtManropeMedium30"
-                        onClick={() => navigate("/createanalysis")}
+                        onClick={() => navigate("/analysis/gosling/cena")}
                       >
 
                       </div>

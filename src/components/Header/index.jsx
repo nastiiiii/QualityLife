@@ -8,6 +8,7 @@ import "./local.css"
 
 const Header = (props) => {
   const navigate = useNavigate();
+  const redirect = props.redirect;
 
   return (
     <>
@@ -15,13 +16,13 @@ const Header = (props) => {
         <div className="flex h-12 md:h-[196px] justify-end mb-[148px] md:ml-[0] ml-[15px] md:mt-0 mt-[34px] relative w-[155px]">
           <Img
             className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-            src="images/img_image15.png"
+            src={process.env.PUBLIC_URL + "/images/img_image15.png"}
             alt="imageFifteen"
           />
           <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
             <Img
               className="h-7 md:h-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen_One"
             />
             <Text
@@ -37,7 +38,7 @@ const Header = (props) => {
             <div className="bg-indigo-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
               <Img
                 className="h-10 md:h-auto object-cover w-[93%]"
-                src="images/img_calendarwithc.png"
+                src={process.env.PUBLIC_URL + "/images/img_calendarwithc.png"}
                 alt="calendarwithc"
               />
             </div>
@@ -59,7 +60,7 @@ const Header = (props) => {
               <div className="flex flex-row items-center justify-start w-auto">
                 <Img
                   className="h-[17px] w-[17px]"
-                  src="images/img_arrowleft.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                   alt="arrowleft"
                 />
                 <Text
@@ -89,7 +90,7 @@ const Header = (props) => {
             >
               <Img
                 className="h-9"
-                src="images/img_group1387.png"
+                src={process.env.PUBLIC_URL + "/images/img_group1387.png"}
                 alt="group1387"
               />
             </Button>
@@ -111,7 +112,7 @@ const Header = (props) => {
               <div className="flex flex-row items-center justify-start w-auto">
                 <Img
                   className="h-[17px] w-[17px]"
-                  src="images/img_arrowleft.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                   alt="arrowleft_One"
                 />
                 <Text
@@ -135,7 +136,7 @@ const Header = (props) => {
             <div className="bg-green-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
               <Img
                 className="h-10 md:h-auto object-cover w-[68%]"
-                src="images/img_3dsyringe1.png"
+                src={process.env.PUBLIC_URL + "/images/img_3dsyringe1.png"}
                 alt="3dsyringeOne"
               />
             </div>
@@ -157,7 +158,7 @@ const Header = (props) => {
               <div className="flex flex-row items-center justify-start w-auto">
                 <Img
                   className="h-[17px] w-[17px]"
-                  src="images/img_arrowup.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_arrowup.svg"}
                   alt="arrowup"
                 />
                 <Text
@@ -182,7 +183,7 @@ const Header = (props) => {
               <Text
                 className="common-pointer mt-[95px] text-black-900 text-xl"
                 size="txtManropeRegular20"
-                onClick={() => navigate("/main")}
+                onClick={() => navigate(redirect)}
               >
                 <>&lt;- Go Back</>
               </Text>
@@ -193,7 +194,7 @@ const Header = (props) => {
             >
               <>
                 Hi, <br />
-                Dr. Marcus
+                {props.doctor_name}
               </>
             </Text>
           </div>

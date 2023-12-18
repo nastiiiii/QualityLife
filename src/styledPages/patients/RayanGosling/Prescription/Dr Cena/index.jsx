@@ -12,13 +12,13 @@ const PrescriptionsOnePageRayanCena = () => {
           <div className="flex h-12 md:h-[67px] justify-end sm:mt-0 mt-[19px] relative w-[155px]">
             <Img
               className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen"
             />
             <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
               <Img
                 className="h-7 md:h-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen_One"
               />
               <Text
@@ -33,8 +33,9 @@ const PrescriptionsOnePageRayanCena = () => {
             <div className="md:h-[163px] h-[164px] m-auto w-full">
               <div className="absolute bg-blue_gray-100 flex flex-col h-full inset-[0] items-start justify-center m-auto p-5 rounded-[47px]">
                 <Text
-                  className="mt-[95px] text-black-900 text-xl"
+                  className="mt-[95px] text-black-900 text-xl z-30"
                   size="txtManropeRegular20"
+                  onClick={() => navigate("/main/gosling/cena")}
                 >
                   <>&lt;- Go Back</>
                 </Text>
@@ -55,24 +56,24 @@ const PrescriptionsOnePageRayanCena = () => {
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
               <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
-              <Text
+              <div onClick={() => navigate("/prescription/gosling/cena")}><Text
                 className="bg-indigo-A700 h-[50px] justify-center mt-[25px] pb-[9px] pl-2.5 sm:pr-5 pr-[35px] pt-3 rounded-md text-white-A700 text-xl w-[219px]"
                 size="txtManropeSemiBold20WhiteA700"
               >
                 Dr Cena
-              </Text>
-              <Text
+              </Text></div>
+              <div onClick={() => navigate("/prescription/gosling/joker/first")}><Text
                 className="bg-gray-400 h-[50px] justify-center mt-[13px] pb-[9px] pl-2.5 sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[219px]"
                 size="txtManropeSemiBold20"
               >
                 Dr Joker
-              </Text>
+              </Text></div>
             </div>
           </div>
           <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
             <Img
               className="h-[22px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -83,7 +84,7 @@ const PrescriptionsOnePageRayanCena = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button

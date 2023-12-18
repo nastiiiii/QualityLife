@@ -14,14 +14,14 @@ const PrescriptionsPageJokerJohn = () => {
           <div className="flex h-12 justify-end md:mt-0 mt-[19px] relative w-[155px]">
             <Img
               className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-              src="images/img_image15.png"
+              src={process.env.PUBLIC_URL + "/images/img_image15.png"}
               alt="imageFifteen"
             />
 
             <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
               <Img
                 className="h-7 md:h-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen_One"
               />
               <Text
@@ -41,7 +41,7 @@ const PrescriptionsPageJokerJohn = () => {
                 <div className="bg-indigo-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                   <Img
                     className="h-10 md:h-auto object-cover w-[93%]"
-                    src="images/img_calendarwithc.png"
+                    src={process.env.PUBLIC_URL + "/images/img_calendarwithc.png"}
                     alt="calendarwithc"
                   />
                 </div>
@@ -63,7 +63,7 @@ const PrescriptionsPageJokerJohn = () => {
                   <div className="flex flex-row items-center justify-start w-auto">
                     <Img
                       className="h-[17px] w-[17px]"
-                      src="images/img_arrowleft.svg"
+                      src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                       alt="arrowleft"
                     />
                     <Text
@@ -93,7 +93,7 @@ const PrescriptionsPageJokerJohn = () => {
                 >
                   <Img
                     className="h-9"
-                    src="images/img_group1387.png"
+                    src={process.env.PUBLIC_URL + "/images/img_group1387.png"}
                     alt="group1387"
                   />
                 </Button>
@@ -115,7 +115,7 @@ const PrescriptionsPageJokerJohn = () => {
                   <div className="flex flex-row items-center justify-start w-auto">
                     <Img
                       className="h-[17px] w-[17px]"
-                      src="images/img_arrowleft.svg"
+                      src={process.env.PUBLIC_URL + "/images/img_arrowleft.svg"}
                       alt="arrowleft"
                     />
                     <Text
@@ -139,7 +139,7 @@ const PrescriptionsPageJokerJohn = () => {
                 <div className="bg-green-50 flex flex-col h-16 items-center justify-start p-3 rounded-[50%] w-16">
                   <Img
                     className="h-10 md:h-auto object-cover w-[68%]"
-                    src="images/img_3dsyringe1.png"
+                    src={process.env.PUBLIC_URL + "/images/img_3dsyringe1.png"}
                     alt="3dsyringeOne"
                   />
                 </div>
@@ -161,7 +161,7 @@ const PrescriptionsPageJokerJohn = () => {
                   <div className="flex flex-row items-center justify-start w-auto">
                     <Img
                       className="h-[17px] w-[17px]"
-                      src="images/img_arrowup.svg"
+                      src={process.env.PUBLIC_URL + "/images/img_arrowup.svg"}
                       alt="arrowup"
                     />
                     <Text
@@ -187,7 +187,7 @@ const PrescriptionsPageJokerJohn = () => {
                 <Text
                   className="common-pointer mt-[95px] text-black-900 text-xl"
                   size="txtManropeRegular20"
-                  onClick={() => navigate("/main")}
+                  onClick={() => navigate("/main/joker/john")}
                 >
                   <>&lt;- Go Back</>
                 </Text>
@@ -211,7 +211,7 @@ const PrescriptionsPageJokerJohn = () => {
             <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[5%] w-[79%]">
               <input className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-end justify-end p-[5px] w-[98%] md:w-full"/>
               <div className="bg-indigo-A700 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/prescription/joker/john")}>
                   <Text
                     className="m-auto text-white-A700 text-xl"
                     size="txtManropeSemiBold20"
@@ -221,7 +221,7 @@ const PrescriptionsPageJokerJohn = () => {
                 </div>
               </div>
               <div className="bg-gray-400 flex flex-col items-start justify-end mt-[13px] p-[9px] rounded-md w-full">
-                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]">
+                <div className="h-7 md:h-[31px] mt-[3px] relative w-[59%]" onClick={() => navigate("/prescription/joker/rayan/first")}>
                   <Text
                     className="m-auto text-black-900 text-xl"
                     size="txtManropeSemiBold20"
@@ -235,7 +235,7 @@ const PrescriptionsPageJokerJohn = () => {
           <div className="flex flex-row items-center justify-end p-1.5 w-[96%] md:w-full">
             <Img
               className="h-[22px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -246,7 +246,7 @@ const PrescriptionsPageJokerJohn = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button
@@ -325,7 +325,7 @@ const PrescriptionsPageJokerJohn = () => {
                 <Text
                   className="common-pointer bg-blue-A700 h-[54px] justify-center pb-0.5 pt-2.5 sm:px-5 px-[21px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[318px]"
                   size="txtManropeMedium30"
-                  onClick={() => navigate("/createprescription")}
+                  onClick={() => navigate("/create/prescription/joker/john")}
                 >
                   Create Prescription
                 </Text>

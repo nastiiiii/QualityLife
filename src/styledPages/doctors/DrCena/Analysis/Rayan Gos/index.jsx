@@ -7,10 +7,11 @@ import Header from "components/Header";
 
 const AnalysisPageCenaRayan = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto sm:px-5 px-[22px] w-full">
-        <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:px-5 w-full" />
+        <Header className="flex md:flex-col flex-row md:gap-5 items-center justify-center md:px-5 w-full" doctor_name="Dr. Cena" redirect="/main/cena/rayan"/>
         <div className="sm:h-[712px] h-[752px] md:h-[945px] max-w-[1467px] mx-auto md:px-5 relative w-full">
           <div className="absolute md:h-[672px] h-[705px] p-3.5 right-[0] top-[0] w-1/5">
             <div className="bg-gray-200 h-[672px] m-auto rounded-[32px] w-[89%]"></div>
@@ -31,7 +32,7 @@ const AnalysisPageCenaRayan = () => {
           <div className="absolute bottom-[0] flex flex-row items-center justify-start p-1.5 right-[0] w-[19%]">
             <Img
               className="h-[22px] ml-[5px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -42,7 +43,7 @@ const AnalysisPageCenaRayan = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button

@@ -7,6 +7,10 @@ import { Button, Img, Input, Text } from "components";
 const MainOnePageJohnJoker = () => {
   const navigate = useNavigate();
 
+  const NEW_ANALYSIS = localStorage.getItem("NEW_ANALYSIS");
+  const NEW_PRESCRIPTION = localStorage.getItem("NEW_PRESCRIPTION");
+  const NEW_COMMENT = localStorage.getItem("NEW_COMMENT");
+
   return (
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-[5px] relative w-full">
@@ -27,11 +31,12 @@ const MainOnePageJohnJoker = () => {
                   Dr. Joker
                 </Text>
                 <Button
-                  className="cursor-pointer font-medium min-w-[157px] mt-[25px] text-center text-xl"
+                  className="cursor-pointer font-medium min-w-[157px] mt-[25px] text-center text-xl z-30"
                   shape="round"
                   color="white_A700"
                   size="xs"
                   variant="fill"
+                  onClick={() =>{NEW_COMMENT ? navigate("/main/new/chat/wick/joker") : navigate("/main/chat/wick/joker")}}
                 >
                   Comments
                 </Button>
@@ -40,7 +45,7 @@ const MainOnePageJohnJoker = () => {
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
                   <div
                     className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                    onClick={() => navigate("/analysisone")}
+                    onClick={() => {NEW_ANALYSIS ? navigate("/analysis/new/wick/joker/first") : navigate("/analysis/wick/joker")}}
                   >
                     <Text
                       className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -50,13 +55,13 @@ const MainOnePageJohnJoker = () => {
                     </Text>
                     <Img
                       className="h-[71px] md:h-auto mb-3 mr-[27px] mt-[31px] object-cover rounded-lg"
-                      src="images/img_rectangle69.png"
+                      src={process.env.PUBLIC_URL + "/images/img_rectangle69.png"}
                       alt="rectangleFortyFive"
                     />
                   </div>
                   <div
                     className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                    onClick={() => navigate("/prescriptionsone")}
+                    onClick={() => {NEW_PRESCRIPTION ? navigate("/prescription/new/wick/joker/first") : navigate("/prescription/wick/joker")}}
                   >
                     <Text
                       className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -66,7 +71,7 @@ const MainOnePageJohnJoker = () => {
                     </Text>
                     <Img
                       className="h-[71px] md:h-auto mt-[55px] object-cover rounded-lg w-[26%]"
-                      src="images/img_rectangle70.png"
+                      src={process.env.PUBLIC_URL + "/images/img_rectangle70.png"}
                       alt="rectangleFortySix"
                     />
                   </div>
@@ -121,14 +126,14 @@ const MainOnePageJohnJoker = () => {
             <div className="flex h-12 md:h-[67px] justify-end mt-[19px] relative w-[155px]">
               <Img
                 className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen"
               />
 
               <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
                 <Img
                   className="h-7 md:h-auto object-cover w-[27px]"
-                  src="images/img_image15.png"
+                  src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                   alt="imageFifteen_One"
                 />
                 <Text
@@ -153,7 +158,7 @@ const MainOnePageJohnJoker = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[13%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
@@ -163,17 +168,17 @@ const MainOnePageJohnJoker = () => {
                   className="m-auto text-white-A700 text-xl"
                   size="txtManropeSemiBold20"
                 >
-                  Dr.Joker
+                  Dr Joker
                 </Text>
               </div>
             </div>
 
           </div>
         </div>
-        <div className="absolute bottom-[1%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
+        <div className="absolute bottom-[5%] flex flex-row items-center justify-start p-1.5 md:px-5 right-[1%] w-[18%]">
           <Img
             className="h-[22px] ml-[5px] w-[21px]"
-            src="images/img_search.svg"
+            src={process.env.PUBLIC_URL + "/images/img_search.svg"}
             alt="search"
           />
           <Text
@@ -184,7 +189,7 @@ const MainOnePageJohnJoker = () => {
           </Text>
           <Img
             className="h-[21px] ml-[61px]"
-            src="images/img_location.svg"
+            src={process.env.PUBLIC_URL + "/images/img_location.svg"}
             alt="location"
           />
           <Button

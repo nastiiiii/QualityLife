@@ -11,7 +11,7 @@ const MainChatPageRayanJoker = () => {
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-3 relative w-full">
         <div className="md:h-[1004px] sm:h-[711px] h-[953px] m-auto max-w-[1461px] md:px-5 w-full">
-          <div className="absolute bg-gray-200 bottom-[0] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
+          <div className="absolute bg-gray-200 bottom-[100px] flex flex-col items-end justify-start left-[1%] p-2 rounded-[53px] w-[79%]">
             <div className="flex flex-col gap-[21px] items-start justify-start mb-[21px] mt-[13px] w-[96%] md:w-full">
               <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
                 <div className="flex md:flex-1 flex-col items-start justify-start w-[94%] md:w-full">
@@ -29,8 +29,8 @@ const MainChatPageRayanJoker = () => {
                       Dr Joker
                     </Text>
                     <Button
-                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl"
-                      onClick={() => navigate("/main")}
+                      className="common-pointer cursor-pointer font-medium min-w-[157px] mt-5 text-center text-xl z-30"
+                      onClick={() => navigate("/main/gosling/joker")}
                       shape="round"
                       color="indigo_A700"
                       size="xs"
@@ -42,12 +42,12 @@ const MainChatPageRayanJoker = () => {
                 </div>
                 <Img
                   className="h-[26px] md:mt-0 mt-[17px]"
-                  src="images/img_settings.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_settings.svg"}
                   alt="settings"
                 />
                 <Img
                   className="h-[26px] md:ml-[0] ml-[31px] md:mt-0 mt-[17px]"
-                  src="images/img_arrowright.svg"
+                  src={process.env.PUBLIC_URL + "/images/img_arrowright.svg"}
                   alt="arrowright"
                 />
               </div>
@@ -56,7 +56,7 @@ const MainChatPageRayanJoker = () => {
                   <div className="flex flex-col gap-12 items-center justify-start w-full">
                     <div
                       className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                      onClick={() => navigate("/analysis")}
+                      onClick={() => navigate("/analysis/gosling/joker/first")}
                     >
                       <Text
                         className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -66,13 +66,13 @@ const MainChatPageRayanJoker = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mb-3 mr-[27px] mt-[31px] object-cover rounded-lg"
-                        src="images/img_rectangle69.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle69.png"}
                         alt="rectangleSixtyFour"
                       />
                     </div>
                     <div
                       className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                      onClick={() => navigate("/prescriptions")}
+                      onClick={() => navigate("/prescription/gosling/joker/first")}
                     >
                       <Text
                         className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -82,14 +82,14 @@ const MainChatPageRayanJoker = () => {
                       </Text>
                       <Img
                         className="h-[71px] md:h-auto mt-[55px] object-cover rounded-lg w-[26%]"
-                        src="images/img_rectangle70.png"
+                        src={process.env.PUBLIC_URL + "/images/img_rectangle70.png"}
                         alt="rectangleSixtyFive"
                       />
                     </div>
                   </div>
                   <div
                     className="common-pointer bg-white-A700 flex flex-col items-end justify-end p-6 sm:px-5 rounded-[47px] w-full"
-                    onClick={() => navigate("/createcheckup")}
+                    onClick={() => navigate("/main/gosling/joker")}
                   >
                     <Text
                       className="leading-[100.00%] mt-[58px] text-3xl sm:text-[26px] md:text-[28px] text-black-900 text-right w-1/2 sm:w-full"
@@ -119,10 +119,10 @@ const MainChatPageRayanJoker = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[0] flex flex-row items-start justify-start right-[1%] w-[17%]">
+          <div className="absolute bottom-[100px] flex flex-row items-start justify-start right-[1%] w-[17%]">
             <Img
               className="h-[22px] mt-[3px] w-[21px]"
-              src="images/img_search.svg"
+              src={process.env.PUBLIC_URL + "/images/img_search.svg"}
               alt="search"
             />
             <Text
@@ -133,7 +133,7 @@ const MainChatPageRayanJoker = () => {
             </Text>
             <Img
               className="h-[21px] ml-[61px] mt-[3px]"
-              src="images/img_location.svg"
+              src={process.env.PUBLIC_URL + "/images/img_location.svg"}
               alt="location"
             />
             <Button
@@ -148,14 +148,14 @@ const MainChatPageRayanJoker = () => {
             <div className="flex h-12 justify-end md:mt-0 mt-[19px] relative w-[155px]">
               <Img
                 className="absolute h-7 inset-y-[0] left-[0] my-auto object-cover w-[27px]"
-                src="images/img_image15.png"
+                src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                 alt="imageFifteen"
               />
 
               <div className="absolute flex flex-row gap-2 md:h-auto h-full inset-[0] items-center justify-start m-auto w-[155px]">
                 <Img
                   className="h-7 md:h-auto object-cover w-[27px]"
-                  src="images/img_image15.png"
+                  src={process.env.PUBLIC_URL + "/images/img_image15.png"}
                   alt="imageFifteen_One"
                 />
                 <Text
@@ -186,7 +186,7 @@ const MainChatPageRayanJoker = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[6%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
+        <div className="absolute bottom-[16%] md:h-[615px] h-[641px] p-3 md:px-5 right-[1%] w-[19%]">
           <div className="bg-gray-200 h-[615px] m-auto rounded-[32px] w-[89%]"></div>
           <div className="absolute flex flex-col inset-x-[0] items-center justify-start mx-auto top-[6%] w-[79%]">
             <div className="bg-white-A700 border-2 border-blue-A700 border-solid h-[35px] w-[98%]"></div>
@@ -195,6 +195,7 @@ const MainChatPageRayanJoker = () => {
                 <Text
                   className="m-auto text-black-900 text-xl"
                   size="txtManropeSemiBold20"
+                  onClick={() => navigate("/main/chat/gosling/cena")}
                 >
                   Dr Cena
                 </Text>
