@@ -305,7 +305,7 @@ const PrescriptionsPageJokerJohnNewSecond = () => {
                 Check Prescription
               </Text>
               <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start mr-[27px] w-[93%] md:w-full">
-                <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-start justify-start p-2.5 rounded-[21px] w-full">
+                <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col items-start justify-start p-2.5 rounded-[21px] w-full z-30">
                   <Text
                     className="leading-[100.00%] md:ml-[0] ml-[3px] text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[44%] sm:w-full"
                     size="txtManropeSemiBold24Black90087"
@@ -319,6 +319,7 @@ const PrescriptionsPageJokerJohnNewSecond = () => {
                     wrapClassName="md:ml-[0] ml-[3px] mt-4 w-[97%]"
                     shape="round"
                     color="gray_400"
+                    onClick={() => {navigate("/prescription/new/joker/john/first")}}
                   ></Input>
                   <Input
                     name="date"
@@ -327,6 +328,7 @@ const PrescriptionsPageJokerJohnNewSecond = () => {
                     wrapClassName="md:ml-[0] ml-[3px] mt-4 w-[97%]"
                     shape="round"
                     color="indigo_A700"
+                    onClick={() => {navigate("/prescription/new/joker/john/second")}}
                   ></Input>
 
                 </div>

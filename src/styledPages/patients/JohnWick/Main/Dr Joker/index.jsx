@@ -8,6 +8,7 @@ const MainOnePageJohnJoker = () => {
   const navigate = useNavigate();
 
   const NEW_ANALYSIS = localStorage.getItem("NEW_ANALYSIS");
+  const NEW_PRESCRIPTION = localStorage.getItem("NEW_PRESCRIPTION");
 
   return (
     <>
@@ -59,7 +60,7 @@ const MainOnePageJohnJoker = () => {
                   </div>
                   <div
                     className="common-pointer bg-white-A700 flex flex-row gap-[22px] items-end justify-start p-2 rounded-[47px] w-full"
-                    onClick={() => navigate("/prescription/wick/joker")}
+                    onClick={() => {NEW_PRESCRIPTION ? navigate("/prescription/new/wick/joker/first") : navigate("/prescription/wick/joker")}}
                   >
                     <Text
                       className="mb-0.5 ml-3.5 mt-[68px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"

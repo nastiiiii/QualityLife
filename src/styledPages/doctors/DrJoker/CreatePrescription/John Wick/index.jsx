@@ -346,7 +346,7 @@ const CreatePrescriptionPageJokerJohn = () => {
               <Text
                 className="common-pointer bg-blue-A700 h-[54px] flex items-center justify-center mt-5 pb-0.5 pt-2.5 sm:px-5 px-[35px] rounded-[24px] text-3xl sm:text-[26px] md:text-[28px] text-white-A700 w-[438px]"
                 size="txtManropeMedium30"
-                onClick={() => navigate(-1)}
+                onClick={() => {localStorage.setItem("NEW_PRESCRIPTION", true);navigate("/main/joker/john")}}
               >
                 Approve
               </Text>

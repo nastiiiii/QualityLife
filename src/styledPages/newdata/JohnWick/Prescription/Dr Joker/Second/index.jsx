@@ -146,7 +146,7 @@ const PrescriptionsOnePageJohnJokerNewSecond = () => {
                 <Text
                   className="bg-gray-400 h-[50px] justify-center pb-[9px] pl-4 sm:pr-5 pr-[35px] pt-3 rounded-md text-black-900 text-xl w-[318px]"
                   size="txtManropeSemiBold20WhiteA700"
-                  /*onClick*/
+                  onClick={() => {navigate("/prescription/new/wick/joker/first")}}
                 >
                   18/12/2023
                 </Text>
