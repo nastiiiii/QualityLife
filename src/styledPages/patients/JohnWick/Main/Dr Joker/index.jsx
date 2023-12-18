@@ -9,6 +9,7 @@ const MainOnePageJohnJoker = () => {
 
   const NEW_ANALYSIS = localStorage.getItem("NEW_ANALYSIS");
   const NEW_PRESCRIPTION = localStorage.getItem("NEW_PRESCRIPTION");
+  const NEW_COMMENT = localStorage.getItem("NEW_COMMENT");
 
   return (
     <>
@@ -35,7 +36,7 @@ const MainOnePageJohnJoker = () => {
                   color="white_A700"
                   size="xs"
                   variant="fill"
-                  onClick={() =>navigate("/main/chat/wick/joker")}
+                  onClick={() =>{NEW_COMMENT ? navigate("/main/new/chat/wick/joker") : navigate("/main/chat/wick/joker")}}
                 >
                   Comments
                 </Button>

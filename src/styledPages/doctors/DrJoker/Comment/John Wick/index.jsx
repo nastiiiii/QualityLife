@@ -115,7 +115,7 @@ const MainChatPageJokerJohn = () => {
                     color="indigo_A700"
                     size="xs"
                     variant="fill"
-                    onClick={() => navigate("/main/joker/john")}
+                    onClick={() => {localStorage.setItem("NEW_COMMENT", true);navigate("/main/joker/john")}}
                   >
                     Publish
                   </Button>

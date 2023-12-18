@@ -9,6 +9,7 @@ const MainPageJokerJohnWick = () => {
 
   const NEW_ANALYSIS = localStorage.getItem("NEW_ANALYSIS");
   const NEW_PRESCRIPTION = localStorage.getItem("NEW_PRESCRIPTION");
+  const NEW_COMMENT = localStorage.getItem("NEW_COMMENT");
 
   return (
     <>
@@ -94,7 +95,7 @@ const MainPageJokerJohnWick = () => {
                 </div>
                 <Button
                   className="common-pointer cursor-pointer font-medium min-w-[157px] md:ml-[0] ml-[361px] mr-[66px] mt-[15px] text-center text-xl"
-                  onClick={() => navigate("/main/chat/joker/john")}
+                  onClick={() => {navigate("/main/chat/joker/john")}}
                   shape="round"
                   color="white_A700"
                   size="xs"
