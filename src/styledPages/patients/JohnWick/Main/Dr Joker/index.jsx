@@ -7,6 +7,8 @@ import { Button, Img, Input, Text } from "components";
 const MainOnePageJohnJoker = () => {
   const navigate = useNavigate();
 
+  const NEW_ANALYSIS = localStorage.getItem("NEW_ANALYSIS");
+
   return (
     <>
       <div className="bg-white-A700 font-manrope h-[982px] mx-auto p-[5px] relative w-full">
@@ -41,7 +43,7 @@ const MainOnePageJohnJoker = () => {
                 <div className="flex md:flex-1 flex-col gap-12 items-center justify-start w-2/5 md:w-full">
                   <div
                     className="common-pointer bg-white-A700 flex flex-row items-start justify-between p-[13px] rounded-[47px] w-full"
-                    onClick={() => navigate("/analysis/wick/joker")}
+                    onClick={() => {NEW_ANALYSIS ? navigate("/analysis/new/wick/joker/first") : navigate("/analysis/wick/joker")}}
                   >
                     <Text
                       className="ml-4 mt-[60px] sm:text-4xl md:text-[38px] text-[40px] text-black-900"

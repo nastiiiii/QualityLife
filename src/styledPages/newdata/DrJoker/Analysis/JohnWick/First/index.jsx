@@ -97,7 +97,7 @@ const AnalysisPageJohnWickDrJokerNewFirst = () => {
                       Check Analysis
                     </Text>
                     <div className="flex flex-col gap-[29px] items-start justify-start w-full">
-                      <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col gap-4 justify-start p-[9px] rounded-[21px] w-[49%] md:w-full">
+                      <div className="bg-white-A700 border-2 border-blue-A700 border-solid flex flex-col gap-4 justify-start p-[9px] rounded-[21px] w-[49%] md:w-full z-30">
                         <Text
                           className="leading-[100.00%] text-2xl md:text-[22px] text-black-900_87 sm:text-xl w-[44%] sm:w-full"
                           size="txtManropeSemiBold24Black90087"
@@ -112,6 +112,7 @@ const AnalysisPageJohnWickDrJokerNewFirst = () => {
                           wrapClassName="w-full"
                           shape="round"
                           color="indigo_A700"
+                          onClick={() => {navigate("/analysis/new/joker/john/first")}}
                         >
                         </Input>
                         <div className="flex flex-col items-center justify-start mb-[193px] mx-auto w-[93%] md:w-full">
@@ -122,6 +123,7 @@ const AnalysisPageJohnWickDrJokerNewFirst = () => {
                             wrapClassName="w-full"
                             shape="round"
                             color="gray_400"
+                            onClick={() => {navigate("/analysis/new/joker/john/second")}}
                           ></Input>
                         </div>
 
